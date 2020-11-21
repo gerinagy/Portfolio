@@ -4,7 +4,18 @@ import './Kiteboarding.css';
 function Kiteboarding() {
   return (
     <div>
-      <h2>Kiteboarding pages</h2>
+      <section className="hero-wrapper">
+        <div className="hero-image">
+          <div className="hero-content">
+            <h3>Kiteboarding</h3>
+          </div>
+        </div>
+
+
+
+
+
+      </section>
     </div>
   )
 }
