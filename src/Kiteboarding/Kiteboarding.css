@@ -1,9 +1,57 @@
 
 
+/* Hero Section */
 
-
-.hero-image{
+.k-hero-image{
+  display: flex;
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: url(../image/kitejumppano1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+
+}
+
+.k-hero-content{
+  background-color: transparent;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  padding-left: 10%;
+  font-size: 30px;
+
+}
+
+.k-hero-content h1, h2, h3{
+  color: black;
+  text-transform: uppercase;
+  font-style: italic;
+  background-color: transparent;
+  margin: 0px;
+}
+
+.k-hero-content h2{
+  font-size: 15px;
+
+}
+
+.k-hero-content h3 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+
+/* Teaching Section */
+
+.k-teaching-wrapper{
+  background-color: whitesmoke;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
 }
