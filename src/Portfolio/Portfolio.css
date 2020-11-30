@@ -1,0 +1,55 @@
+:root{
+  --primary: #efb6b2;
+  --secondary: #4e4e4e;
+  --error: #ff4a4a;
+}
+
+/* base styles & title */
+body{
+  font-family: "Noto Serif";
+  color: var(--secondary);
+}
+.Portfolio{
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+.title h1{
+  color: var(--primary);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.title h2, .title p{
+  text-align: center;
+}
+.title h2{
+  margin-top: 60px;
+  font-size: 2.6rem;
+}
+
+/* UploadForm */
+
+.file-input {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.file-input input{
+  display: none;
+}
+
+.file-input span {
+  font-size: 20px;
+  font-weight: bold;
+  border: solid 1px black;
+  border-radius: 30px;
+  text-align: center;
+  width: 25px;
+  padding: 10px;
+  cursor: pointer;
+
+
+
+}

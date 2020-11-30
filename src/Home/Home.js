@@ -24,12 +24,12 @@ function Home() {
             <Link to="/Kiteboarding" className='block-link-1 block-link'>
               <li>Kiteboarding</li>
             </Link>
-            <Link to="/About" className='block-link-2 block-link'>
+            <Link to="/Webdevelopment" className='block-link-2 block-link'>
               <li>Web Development</li>
             </Link>
           </div>
           <div className="grid-wrapper-2">   
-            <Link to="/Shop" className='block-link-3 block-link'>
+            <Link to="/Portfolio" className='block-link-3 block-link'>
               <li>Portfolio</li>
             </Link>
           </div>

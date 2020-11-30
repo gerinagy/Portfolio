@@ -1,10 +1,15 @@
 import React from 'react';
 import './Portfolio.css';
 
+// Comps
+import Title from './comps/Title';
+import UploadForm from './comps/UploadForm';
+
 function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio Page</h1>
+    <div className="Portfolio">
+      <Title/>
+      <UploadForm/>
     </div>
   );
 }

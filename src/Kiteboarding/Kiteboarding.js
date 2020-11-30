@@ -19,8 +19,12 @@ function Kiteboarding() {
 
         <div className="k-teaching-text">
           <h3>Teaching</h3>
-          <p>Feel free to contact about Kitelessons and details.</p>
-          <a name="Contact me." id="" class="btn btn-primary" href="#" role="button"></a>
+          <p>Kitelessons with brand new kites.
+          <br/>Feel free to contact about lessons and details. </p>
+          
+          <div className="k-buttons">
+            <a href="https://www.eleveightkites.com" target="_blank" rel="noopener noreferrer"><span>contact me</span></a>
+          </div>
         </div>
 
         <div className="k-kite-image"></div>
@@ -29,23 +33,26 @@ function Kiteboarding() {
 
       <section className="k-eleveight-wrapper">
         <div className="k-eleveight-imgtext">
-          <div className="k-eleveight-image"></div>
-          <h3>2020 FS</h3>
+          <div className="k-eleveight-image-wrapper">
+            <div className="k-eleveight-image" />
+          </div>
+          <h3>2021 FS</h3>
         </div>
 
 
         <div className="k-eleveight-text">
 
           <h3>Eleveight Kites</h3>
-          <p>Kites. Boards. Other Equipments.
-            <br></br>Check the website and contact me.
+          <p>Kites. Boards. Equipments.
+            <br/>Check the website and contact me for prices.
           </p>
           <div className="k-buttons">
-            <a href="https://www.eleveightkites.com" target="_blank" rel="noopener noreferrer"><button>Visit website</button></a>
+            <a href="https://www.eleveightkites.com/kites" target="_blank" rel="noopener noreferrer"><span>Visit website</span></a>
 
-            <a href="https://www.eleveightkites.com" target="_blank" rel="noopener noreferrer"><button>contact me</button></a>
+            <a href="https://www.eleveightkites.com" target="_blank" rel="noopener noreferrer"><span>contact me</span></a>
           </div>
         </div>
+
 
 
 

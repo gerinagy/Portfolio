@@ -13,7 +13,7 @@
   position: relative;
   width: 100%;
   height: 80vh;
-  background-image: url(../image/kitejumppano1.jpg);
+  background-image: url(../Assets/image/kitejumppano1.jpg);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +54,7 @@
 
 .k-teaching-wrapper, .k-eleveight-wrapper{
   background-color: #cfd8df;
-  background-image: url(../image/eleveight-logo.png);
+  background-image: url(../Assets/image/eleveight-logo.png);
   background-size: 80px;
   
   background-position: center bottom;
@@ -67,7 +67,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 10px;
+
   
 
 }
@@ -76,6 +76,11 @@
 .k-teaching-text, .k-eleveight-text {
   background-color: transparent;
   padding: 20px;
+}
+
+.k-teaching-text h3, .k-eleveight-text h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .k-teaching-text p, .k-eleveight-text p {
@@ -91,14 +96,25 @@
   background-color: transparent;
   text-align: center;
 
-
   max-height: 400px;
   max-width: 400px;
+  background-color: transparent;
+
+
 }
 
+.k-eleveight-image-wrapper {
+  height: 95%;
+  width: 100%;
+  background-color: transparent;
+}
 
+.k-eleveight-imgtext h3 {
+  height: 5%;
+  background-color: transparent;
+}
 .k-kite-image{
-  background-image: url("../image/coolkite.JPG");
+  background-image: url("../Assets/image/coolkite.JPG");
   background-position: center center;
   background-size: cover;
   height: 400px;
@@ -108,13 +124,42 @@
 
 
 .k-eleveight-image{
-  background-image: url("../image/FS-LGrey.png");
-  background-position: center center;
+  background-image: url("../Assets/image/FS-LGrey.png");
+  background-position: right top;
   background-size: cover;
   width: 100%;
   height: 100%;
-
-  border-radius: 10px;
-  
   background-color: transparent;
+
+
+  background-color: transparent;
+}
+
+.k-buttons {
+  display: flex;
+  background-color: transparent;
+  padding-top: 40px;
+}
+
+.k-buttons a {
+  background-color: transparent;
+  color: black;
+  text-transform: uppercase;
+  border: solid 1px black ;border-radius: 15px;
+
+  padding: 8px;
+  margin-right: 15px;
+  font-weight: 400;
+  font-size: 15px;
+
+  transition: background-color 1s;
+}
+
+.k-buttons a:hover {
+  background-color: rgba(255, 255, 255, 0.322);
+}
+
+.k-buttons span {
+  background-color: transparent;
+
 }

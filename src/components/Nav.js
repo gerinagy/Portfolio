@@ -19,7 +19,7 @@ function Nav() {
           <Link to="/Kiteboarding" className='nav-link'>
             <li>Kiteboarding</li>
           </Link>
-          <Link to="/Webdewelopment" className='nav-link'>
+          <Link to="/Webdevelopment" className='nav-link'>
             <li>Web Development</li>
           </Link>
           <Link to="/Portfolio" className='nav-link'>
