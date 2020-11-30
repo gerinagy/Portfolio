@@ -49,7 +49,8 @@ body{
   width: 25px;
   padding: 10px;
   cursor: pointer;
+}
 
-
-
+.file-input span:hover {
+  background-color: darkgrey;
 }

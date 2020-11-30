@@ -23,11 +23,11 @@ function Footer() {
           <div className="social-icons">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
-            <a href="mailto:nagy.gergi6@gmail.com" ><i className="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="mailto:nagy.gergi6@gmail.com" ><i className="fa fa-envelope" ></i></a>
 
             <a href="https://www.facebook.com/gergo.nagy.545/" target='_blank' rel="noreferrer"><i className="fa fa-facebook"></i></a>
 
-            <a href="https://www.instagram.com/ngeri6" target="_blank" rel="noreferrer"><i className className="fa fa-instagram"></i></a>
+            <a href="https://www.instagram.com/ngeri6" target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a>
 
             <a href="https://www.youtube.com/channel/UCXUUylIJiLE_uBLszlAqNAA" target="_blank" rel="noreferrer"><i className="fa fa-youtube"></i></a>
 
