@@ -10,8 +10,9 @@ import Modal from './comps/Modal';
 function Portfolio() {
   const [selectedImg, setSelectedImg] = useState(null);
 
+
   return (
-    <div className="Portfolio">
+    <div className="Portfolio" >
       <Title/>
       <UploadForm/>
       <ImageGrid setSelectedImg={setSelectedImg} />
