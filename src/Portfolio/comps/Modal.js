@@ -8,14 +8,15 @@ const Modal = ({ selectedImg, setSelectedImg }) => {
     }  
   }
 
-  const keyPress = (e) => {
-    if (e.key === "Escape") {
-      console.log("esc")
-    }
-  }
+  // const keyPress = (e) => {
+  //   if (e.key === "Escape") {
+  //     console.log("esc")
+  //   }
+  // }
+  // onKeyPress = { keyPress }
 
   return (
-    <div className="backdrop" onClick={handleClick} onKeyPress={ keyPress }>
+    <div className="backdrop" onClick={handleClick} >
       <img src={selectedImg} alt="enlarged pic"/>
   
     </div>
