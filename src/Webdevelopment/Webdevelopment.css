@@ -1,0 +1,32 @@
+
+.webdev-hero {
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(66, 98, 110, 0.274);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.webdev-content{
+  width: 90%;
+  position: relative;
+  background-color: coral;
+}
+
+.first-row {
+
+  display: flex;
+}
+
+.webdev-hero-name {
+  padding: 0 10px;
+  color: rgba(35, 128, 156, 0.432);
+}
+
+a {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+
+}

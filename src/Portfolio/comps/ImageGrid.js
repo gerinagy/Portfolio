@@ -10,7 +10,7 @@ const ImageGrid = ({ setSelectedImg }) => {
 
   return (
     <div>
-      <h1 >Share your moments with us. <UploadForm/></h1>
+      <h1 style={{ padding: "0 10px" }}>Share your moments with us. <UploadForm/></h1>
       <div className="portfolio-img-grid">
         { docs && docs.map(doc => (
           <motion.div className="portfolio-img-wrap" key={doc.id}
@@ -26,6 +26,7 @@ const ImageGrid = ({ setSelectedImg }) => {
           </motion.div>
         )) }
       </div>
+      <h1 style={{ textAlign: "center", padding: "40px" }} >You are welcome here anytime.</h1>
     </div>
   )
 }
