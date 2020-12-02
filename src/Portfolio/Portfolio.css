@@ -10,7 +10,7 @@ body{
   color: var(--secondary);
 }
 .Portfolio{
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -99,10 +99,11 @@ form{
   overflow: hidden;
   height: 0;
   padding: 50% 0;
-  /* padding controls height, will always be perfectly square regardless of width */
+ /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
 
 }
+ 
 .portfolio-img-wrap img{
   min-width: 100%;
   min-height: 100%;
@@ -111,6 +112,8 @@ form{
   top: 0;
   left: 0;
 }
+
+
 
 /* Portfolio modal styles */
 .backdrop{
@@ -132,3 +135,31 @@ form{
   border: 3px solid white;
 }
 
+
+
+/* Auto fit Portfolio images */
+
+/* .portfolio-img-grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(196, 234, 240, 0.497);
+
+  
+}
+
+.portfolio-img-wrap{
+  margin: 0;
+  padding: 0;
+
+
+}
+.portfolio-img-wrap img{
+  padding: 5px;
+  height: 200px;
+
+    
+} */
