@@ -1,0 +1,141 @@
+
+/* burger animated bmenu logo */
+
+.menu-btn {
+    position: fixed;
+    left: 20px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    z-index: 11;
+}
+
+.menu-btn_burger {
+    width: 30px;
+    height: 3px;
+    background: black;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before, .menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: black;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+
+.menu-btn_burger::before {
+    transform: translateY(-8px);
+}
+
+.menu-btn_burger::after {
+    transform: translateY(8px);
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn_burger {
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) ;
+}
+
+.menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) ;
+}
+
+
+
+
+
+/* animated navmenu */
+
+.nav-active {
+    transform: translateX(0%);
+
+}
+
+.li-active {
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Side-Nav */
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #E3EEF0;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 500px;
+    height: 100%;
+    padding: 0;
+    z-index: 8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(-1000px);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+
+.nav-sidebar ul {
+    padding-top: 15px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    padding: 150px 30px;
+    
+    
+
+}
+
+.nav-sidebar ul li, a{
+    list-style: none;
+    height: 60px;
+    padding-top: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+    
+
+}
+
+.profile {
+    width: 50%;
+    height: 100%;
+    padding: 90px 70px;
+    /* background-color: grey; */
+    text-align: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+}

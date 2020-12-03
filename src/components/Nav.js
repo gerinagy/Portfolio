@@ -1,7 +1,7 @@
 import React from 'react';
 import './Nav.css';
 import { Link } from 'react-router-dom';
-import Menu from './Menu';
+import Burger from './Burger';
 
 
 
@@ -27,7 +27,7 @@ function Nav() {
             <li>Portfolio</li>
           </Link>
         </ul>
-        <Menu/>
+        <Burger/>
       </nav>
     </>
 
