@@ -10,16 +10,27 @@ import { Link } from 'react-router-dom';
 
 const Burger = () => {
 
-  const [open, setOpen] = useState(false)
+
 
   const menuButton = () => {
+    
     const menuBtn = document.querySelector('.menu-btn');
     const nav = document.querySelector('.nav-sidebar');
     menuBtn.classList.toggle('open');
     nav.classList.toggle('nav-active')
-    setOpen(true)
+
+
   };
 
+
+  const menuExit = () => {
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav-sidebar');
+
+    menuBtn.classList.remove('open');
+    nav.classList.remove('nav-active')
+
+  }
 
 
 

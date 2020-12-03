@@ -59,20 +59,6 @@
 
 
 
-/* animated navmenu */
-
-.nav-active {
-    transform: translateX(0%);
-
-}
-
-.li-active {
-    opacity: 100%;
-}
-
-
-
-
 
 
 
@@ -139,3 +125,20 @@
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.089);
 }
+
+
+
+
+/* animated navmenu */
+
+.nav-active {
+    transform: translateX(0%);
+
+}
+
+.li-active {
+    opacity: 100%;
+}
+
+
+
