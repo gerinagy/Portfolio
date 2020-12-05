@@ -23,6 +23,12 @@ body{
   font-size: 2.6rem;
 }
 
+.title p {
+  padding-bottom: 100px;
+  font-weight: 600;
+  font-style: italic;
+}
+
 /* Portfolio UploadForm */
 
 form{
@@ -91,10 +97,9 @@ form{
 
 .portfolio-img-grid {
   display: flex;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   flex-wrap: wrap;
 
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   text-align: center;
 
 }
@@ -144,30 +149,3 @@ overflow: hidden;
 }
 
 
-
-/* Auto fit Portfolio images */
-
-/* .portfolio-img-grid {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(196, 234, 240, 0.497);
-
-  
-}
-
-.portfolio-img-wrap{
-  margin: 0;
-  padding: 0;
-
-
-}
-.portfolio-img-wrap img{
-  padding: 5px;
-  height: 200px;
-
-    
-} */
