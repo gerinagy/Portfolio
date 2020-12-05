@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Burger.css';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 
 
@@ -10,75 +11,98 @@ import { Link } from 'react-router-dom';
 
 const Burger = () => {
 
+  const [open, setOpen] = useState(false)
+  
+  const BurgerOpen = () => {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
 
 
-  const menuButton = () => {
-    
-    const menuBtn = document.querySelector('.menu-btn');
-    const nav = document.querySelector('.nav-sidebar');
-    menuBtn.classList.toggle('open');
-    nav.classList.toggle('nav-active')
+  
+
+  const handleClick = (e) => {
+    if (e.target.classList.contains('backdrop')) {
+      setOpen(false);
+    }
+  }
 
 
-  };
+  function Slide() {
+
+    return (
+      <motion.div className="backdrop" onClick={handleClick}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        >
 
 
-  const menuExit = () => {
-    const menuBtn = document.querySelector('.menu-btn');
-    const nav = document.querySelector('.nav-sidebar');
+        <motion.aside className="nav-sidebar"
+          initial={{ x: "-1000vh" }}
+          animate={{ x: 0 }}>
+          <ul>
+            <li onClick={() => setOpen(false)}><Link to="/" className="menulinks">Home</Link></li>
+            <li onClick={() => setOpen(false)}><Link to="/Kiteboarding" className="menulinks">Kiteboarding</Link></li>
+            <li onClick={() => setOpen(false)}><Link to="/Webdevelopment" className="menulinks">Web Development</Link></li>
+            <li onClick={() => setOpen(false)}><Link to="/Portfolio" className="menulinks">Portfolio</Link></li>
 
-    menuBtn.classList.remove('open');
-    nav.classList.remove('nav-active')
+          </ul>
+          <div className="profile">
+            <div className="profile-wrapper">
+              <div className="profilePic">
+                <img src="./image/captain.JPG" alt="" />
+              </div>
 
+              <div className="profileBio">
+                <h1>Hi!</h1>
+                <p>Welcome to my Portfolio! This Website briefly explain what am I doing. Please take your time and scroll around.</p>
+
+              </div>
+
+              <div className="contactinfo">
+                <h1>Contact</h1>
+
+                <li><a className="profil-email" href="mailto:nagy.gergi6@gmail.com">nagy.gergi6@gmail.com</a></li>
+
+                <li><a to="https://api.whatsapp.com/send?phone=+36%2030%204764%20552" target="_blank"><i className="fa fa-whatsapp" aria-hidden="hidden"></i> +36 30 4764 552</a></li>
+
+                <div className="profil-social">
+
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </motion.aside>
+
+
+      </motion.div>
+
+
+    )
   }
 
 
 
   return (
     <div>
-      <div className="menu-btn"  onClick={menuButton} >
+      <div className="menu-btn" onClick={() => setOpen(!open)} >
         <div className="menu-btn_burger"></div>
       </div>
-     
-      <aside className="nav-sidebar">
-        <ul>
-          <li><Link to="/" className="menulinks">Home</Link></li>
-          <li>Kiteboarding</li>
-          <li>Web Development</li>
-          <li>Portfolio</li>
+      {open && <Slide />}
 
-        </ul>
-        <div className="profile">
-          <div className="profile-wrapper">
-            <div className="profilePic">
-              <img src="./image/captain.JPG" alt="" />
-            </div>
-
-            <div className="profileBio">
-              <h1>Hi!</h1>
-              <p>Welcome to my Portfolio! This Website briefly explain what am I doing. Please take your time and scroll around.</p>
-
-            </div>
-
-            <div className="contactinfo">
-              <h1>Contact</h1>
-
-              <li><a className="profil-email" href="mailto:nagy.gergi6@gmail.com">nagy.gergi6@gmail.com</a></li>
-
-              <li><a to="https://api.whatsapp.com/send?phone=+36%2030%204764%20552" target="_blank"><i className="fa fa-whatsapp" aria-hidden="hidden"></i> +36 30 4764 552</a></li>
-
-              <div className="profil-social">
-
-
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </aside>
     </div>
   )
 }
+
+
+
+
+
 
 export default Burger;
