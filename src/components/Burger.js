@@ -12,17 +12,17 @@ import { motion } from 'framer-motion';
 const Burger = () => {
 
   const [open, setOpen] = useState(false)
-  
+
   const BurgerOpen = () => {
     return (
       <div>
-        
+
       </div>
     )
   }
 
 
-  
+
 
   const handleClick = (e) => {
     if (e.target.classList.contains('backdrop')) {
@@ -37,7 +37,7 @@ const Burger = () => {
       <motion.div className="backdrop" onClick={handleClick}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        >
+      >
 
 
         <motion.aside className="nav-sidebar"
@@ -67,10 +67,15 @@ const Burger = () => {
 
                 <li><a className="profil-email" href="mailto:nagy.gergi6@gmail.com">nagy.gergi6@gmail.com</a></li>
 
-                <li><a to="https://api.whatsapp.com/send?phone=+36%2030%204764%20552" target="_blank"><i className="fa fa-whatsapp" aria-hidden="hidden"></i> +36 30 4764 552</a></li>
+                <li><a to="https://api.whatsapp.com/send?phone=+36%2030%204764%20552" target="_blank" rel="noopener noreferrer"><i className="fa fa-whatsapp" aria-hidden="hidden"></i> +36 30 4764 552</a></li>
 
                 <div className="profil-social">
+                  <a href="https://facebook.com/gergo.nagy.545/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
+                  <a href="https://instagram.com/ngeri6/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCXUUylIJiLE_uBLszlAqNAA" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube" aria-hidden="true"></i>
+                  </a>
 
 
                 </div>
@@ -81,7 +86,7 @@ const Burger = () => {
         </motion.aside>
 
 
-      </motion.div>
+      </motion.div >
 
 
     )

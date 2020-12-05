@@ -3,8 +3,8 @@
 
 .menu-btn {
     position: fixed;
-    left: 20px;
-    top: 50px;
+    left: 30px;
+    top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,13 @@
     cursor: pointer;
     transition: all .5s ease-in-out;
     z-index: 11;
+
 }
 
 .menu-btn_burger {
     width: 30px;
     height: 3px;
-    background: black;
+    background: whitesmoke;
     border-radius: 10px;
     transition: all .5s ease-in-out;
 }
@@ -28,7 +29,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background: black;
+    background: whitesmoke;
     border-radius: 10px;
     transition: all .5s ease-in-out;
 }
@@ -72,7 +73,7 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: #E3EEF0;
+    background-color: rgba(54, 54, 54, 0.9);
     width: 100%;
     max-width: 1000px;
     min-width: 500px;
@@ -83,7 +84,7 @@
     justify-content: space-evenly;
     align-items: center;
     /* transform: translateX(-1000px); */
-    transition: transform 0.5s ease-in-out;
+
 
 }
 
@@ -107,7 +108,7 @@
     padding-top: 0 10px;
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: whitesmoke;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;

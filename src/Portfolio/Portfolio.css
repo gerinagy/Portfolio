@@ -1,6 +1,6 @@
 :root{
-  --primary: #55798a;
-  --secondary: #4e4e4e;
+  --primary: #dddddd;
+  --secondary: #dddddd;
   --error: #ff4a4a;
 }
 
@@ -8,6 +8,7 @@
 body{
   font-family: "Noto Serif";
   color: var(--secondary);
+  background-color: rgba(4, 36, 51, 0.76);
 }
 .Portfolio{
   max-width: 1080px;
@@ -61,7 +62,7 @@ form{
 
 .file-input span:hover {
   background-color: var(--primary);
-  color: white;
+  color: rgba(4, 36, 51, 0.76);
 }
 
 
