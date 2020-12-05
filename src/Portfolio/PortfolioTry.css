@@ -1,0 +1,166 @@
+:root{
+  --primary: #dddddd;
+  --secondary: #dddddd;
+  --error: #ff4a4a;
+}
+
+/* Portfolio Titles */
+body{
+  font-family: "Noto Serif";
+  color: var(--secondary);
+  background-color: rgba(4, 36, 51, 0.76);
+}
+.Portfolio{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.title h2, .title p{
+  text-align: center;
+}
+.title h2{
+  margin-top: 100px;
+  font-size: 2.6rem;
+}
+
+/* Portfolio UploadForm */
+
+form{
+  margin: 30px auto 10px;
+  text-align: center;
+}
+
+
+.error{
+  color: var(--error);
+}
+
+.file-input {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.file-input input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.file-input span {
+  font-size: 20px;
+  font-weight: bold;
+  border: solid 1px var(--primary);
+  border-radius: 30px;
+  text-align: center;
+  width: 25px;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--primary);
+  transition: color, 0.5s ease-in-out ;
+}
+
+.file-input span:hover {
+  background-color: var(--primary);
+  color: rgba(4, 36, 51, 0.76);
+}
+
+
+
+
+.file-output {
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  font-size: 0.8rem;
+}
+
+
+
+.progress-bar {
+  
+  height: 5px;
+  border-radius: 3px;
+  background-color: var(--primary);
+  margin-top: 20px;
+
+}
+
+
+/* Portfolio images */
+
+.portfolio-img-grid {
+  margin: 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.portfolio-img-wrap{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+ /* padding controls height, will always be perfectly square regardless of width */
+  position: relative;
+
+}
+ 
+.portfolio-img-wrap img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 130%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+/* Portfolio modal styles */
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+}
+.backdrop img{
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 70px auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 3px solid white;
+}
+
+
+
+/* Auto fit Portfolio images */
+
+/* .portfolio-img-grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(196, 234, 240, 0.497);
+
+  
+}
+
+.portfolio-img-wrap{
+  margin: 0;
+  padding: 0;
+
+
+}
+.portfolio-img-wrap img{
+  padding: 5px;
+  height: 200px;
+
+    
+} */
