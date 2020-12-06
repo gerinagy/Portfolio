@@ -76,6 +76,7 @@
 .k-teaching-text, .k-eleveight-text {
   background-color: transparent;
   padding: 20px;
+  color: black;
 }
 
 .k-teaching-text h3, .k-eleveight-text h3 {
@@ -151,7 +152,9 @@
   margin-right: 15px;
   font-weight: 400;
   font-size: 15px;
-
+  height: 30px;
+  width: 150px;
+  align-items: center;
   transition: background-color 1s;
 }
 

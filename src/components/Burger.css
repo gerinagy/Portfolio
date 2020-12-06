@@ -65,8 +65,6 @@
 
 
 
-
-
 /* Side-Nav */
 
 .nav-sidebar {
@@ -77,26 +75,33 @@
     width: 100%;
     max-width: 1000px;
     min-width: 500px;
-    height: 100%;
+    height: 100vh;
     padding: 0;
     z-index: 8;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* transform: translateX(-1000px); */
+    overflow: hidden;
+    transform: translateX(-1000px);
 
 
 }
 
 
+.nav-active{
+    transform: translateX(0);
+}
+
+
+
 .nav-sidebar ul {
-    padding-top: 15px;
+    padding: 100px 0 100px 0;
     width: 50%;
     height: 100%;
     text-align: center;
     align-items: center;
     display: grid;
-    padding: 150px 30px;
+    background-color: rgba(216, 159, 16, 0.849);
     
     
 
@@ -119,26 +124,26 @@
 
 .profile {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     padding: 90px 70px;
+    overflow: hidden;
     /* background-color: grey; */
     text-align: center;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.089);
-}
-
-
-
-
-/* animated navmenu */
-
-.nav-active {
-    transform: translateX(0%);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    background-color: red;
 
 }
 
-.li-active {
-    opacity: 100%;
+
+
+.profilePic  img{
+    width: 100%;
+    height: 100%;
+
+
 }
+
+
 
 

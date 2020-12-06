@@ -2,23 +2,22 @@ import React, { useState } from 'react';
 import './Burger.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
-
-
-
+import Profpic from '../Assets/image/captain.JPG';
 
 
 
 const Burger = () => {
 
   const [open, setOpen] = useState(false)
+  const menuBtn = document.querySelector('.menu-btn');
 
   const BurgerOpen = () => {
-    return (
-      <div>
 
-      </div>
-    )
+    
+    menuBtn.classList.toggle('open');
+
+    setOpen(!open)
+    
   }
 
 
@@ -27,6 +26,7 @@ const Burger = () => {
   const handleClick = (e) => {
     if (e.target.classList.contains('backdrop')) {
       setOpen(false);
+      menuBtn.classList.remove('open');
     }
   }
 
@@ -41,7 +41,7 @@ const Burger = () => {
 
 
         <motion.aside className="nav-sidebar"
-          initial={{ x: "-1000vh" }}
+          initial={{ x: "-100vh" }}
           animate={{ x: 0 }}>
           <ul>
             <li onClick={() => setOpen(false)}><Link to="/" className="menulinks">Home</Link></li>
@@ -53,7 +53,7 @@ const Burger = () => {
           <div className="profile">
             <div className="profile-wrapper">
               <div className="profilePic">
-                <img src="./image/captain.JPG" alt="" />
+                <img src={Profpic} alt="" />
               </div>
 
               <div className="profileBio">
@@ -96,7 +96,7 @@ const Burger = () => {
 
   return (
     <div>
-      <div className="menu-btn" onClick={() => setOpen(!open)} >
+      <div className="menu-btn" onClick={BurgerOpen} >
         <div className="menu-btn_burger"></div>
       </div>
       {open && <Slide />}
