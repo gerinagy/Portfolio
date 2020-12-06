@@ -16,7 +16,7 @@ const Burger = () => {
     
     menuBtn.classList.toggle('open');
 
-    setOpen(!open)
+    setOpen(!open);
     
   }
 
