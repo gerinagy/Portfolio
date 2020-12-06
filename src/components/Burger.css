@@ -88,7 +88,7 @@
 }
 
 
-.nav-active{
+.nav-sidebar.active {
     transform: translateX(0);
 }
 

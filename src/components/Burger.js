@@ -10,13 +10,14 @@ const Burger = () => {
 
   const [open, setOpen] = useState(false)
   const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector ('.nav-sidebar');
 
-  const BurgerOpen = () => {
+  const BurgerOpen = (e) => {
 
-    
+    // nav.classList.toggle('active');
     menuBtn.classList.toggle('open');
+    nav.classList.toggle('active');
 
-    setOpen(!open);
     
   }
 
@@ -29,7 +30,7 @@ const Burger = () => {
       menuBtn.classList.remove('open');
     }
   }
-
+// asldkasldklasdk
 
   function Slide() {
 
@@ -40,7 +41,7 @@ const Burger = () => {
       >
 
 
-        <motion.aside className="nav-sidebar"
+        <aside className="nav-sidebar"
           initial={{ x: "-100vh" }}
           animate={{ x: 0 }}>
           <ul>
@@ -83,7 +84,7 @@ const Burger = () => {
 
             </div>
           </div>
-        </motion.aside>
+        </aside>
 
 
       </motion.div >
