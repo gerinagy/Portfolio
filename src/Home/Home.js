@@ -4,14 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 function Home() {
-  const blockHover = document.querySelectorAll('.block-link');
-
-    // blockHover ('mouseover', () => {
-    //   blockHover.addClassName('block-active');
-    // })
-
-  // blockHover.addEventListener('mouseover', () => { blockHover.classList.add('.block-active') });
-  console.log(blockHover)
 
 
   return (

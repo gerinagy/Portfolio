@@ -6,6 +6,7 @@ import Burger from './Burger';
 
 
 function Nav() {
+  
 
   return (
     <>
@@ -13,7 +14,7 @@ function Nav() {
 
         <Burger />
 
-        <Link to="/" className='nav-link'>
+        <Link to="/" className='logo-name' >
           <h3 className='first-name'>Gergo </h3><h3 className='surname'>Nagy</h3>
         </Link>
         
