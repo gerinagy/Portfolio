@@ -43,12 +43,16 @@ a {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  padding: 10px;
+  color: black;
 }
 
 .skill-info-wrapper {
-  width: 20%;
-  background-color: wheat;
+  width: 15%;
+  padding: 20px;
+  background-color: rgba(82, 82, 82, 0.733);
   border-radius: 10px;
+
 }
 
 .skill-image img {
