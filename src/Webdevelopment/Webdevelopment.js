@@ -1,7 +1,17 @@
 import React from 'react';
 import './Webdevelopment.css';
 
+// Images
+import Speed from '../Assets/icons/speed.png';
+import Responsive from '../Assets/icons/responsive.png';
+import Dynamic from '../Assets/icons/dynamic.png';
+
+
 function Webdevelopment() {
+
+
+
+
   
   return (
     <div>
@@ -16,15 +26,81 @@ function Webdevelopment() {
         </div>
       </section>
 
+
       <section className="webdev-about" id="about">
+        <div className="title">
+          <h1>About</h1>
+        </div>
+        <div className="skills-wrapper">
+          <div className="skill-info-wrapper">
+            <div className="skill-image">
+              <img src={Speed} alt=""/>
+            </div>
+            <h2>Fast</h2>
+            <p>Scaled on fast load times and a great user experience.</p>
+          </div>
+
+          
+          <div className="skill-info-wrapper">
+            <div className="skill-image">
+              <img src={Responsive} alt=""/>
+            </div>
+            <h2>Responsive</h2>
+            <p>Scaled on fast load times and a great user experience.</p>
+          </div>
+
+          <div className="skill-info-wrapper">
+            <div className="skill-image">
+              <img src={Dynamic} alt=""/>
+            </div>
+            <h2>Dynamic</h2>
+            <p>Scaled on fast load times and a great user experience.</p>
+          </div>
+        </div>
+
+        <div className="about-content-wrapper">
+
+          <div className="about-info-wrapper">
+            <div className="about-img-holder">
+              <img src={Responsive} alt=""/>
+            </div>
+            <div className="about-bio">
+              <h2>Who am I?</h2>
+              <p>I'm a Full-Stack Developer from Hungary. I have high passing for interactive dynamic websites</p>
+
+            </div>
+          </div>
+
+          
+
+          <div className="about-languages">
+            <div className="language-items">
+              <div className="language-title">
+                <h2>css</h2>
+              </div>
+              <div className="language-percentage">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
 
       </section>
+
 
       <section className="webdev-projects">
 
       </section>
+
     </div>
   );
 }
+
+
+
+
+
 
 export default Webdevelopment;

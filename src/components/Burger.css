@@ -233,8 +233,6 @@
 
     .sidebar-wrapper {
         flex-direction: column;
-
-
         overflow: hidden;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
@@ -246,10 +244,8 @@
     .nav-sidebar ul {
         margin-top: 20px;
         width: 100%;
-        height: auto;
+        height: 500px;
         padding: 0;
-
-
 
     }
 

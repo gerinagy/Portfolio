@@ -3,7 +3,7 @@
   height: 100vh;
   align-items: center;
   text-align: center;
-  background-color: rgba(66, 98, 110, 0.274);
+  background-color: black;
   display: flex;
   justify-content: space-evenly;
 }
@@ -29,4 +29,40 @@ a {
   width: 200px;
   justify-content: center;
 
+}
+
+
+
+/* About */
+
+.webdev-about {
+  text-align: center;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.skill-info-wrapper {
+  width: 20%;
+  background-color: wheat;
+  border-radius: 10px;
+}
+
+.skill-image img {
+  width: 100px;
+}
+
+
+
+.about-content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-info-wrapper, .about-languages{
+  width: 40%;
+  margin: 200px 0 0 0; 
 }
