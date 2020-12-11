@@ -5,6 +5,9 @@ import './Webdevelopment.css';
 import Speed from '../Assets/icons/speed.png';
 import Responsive from '../Assets/icons/responsive.png';
 import Dynamic from '../Assets/icons/dynamic.png';
+import AboutProf from '../Assets/image/sunsetprof.jpg';
+
+// Components
 import { LangList } from './comps/LangList';
 
 
@@ -63,11 +66,14 @@ function Webdevelopment() {
 
           <div className="about-info-wrapper">
             <div className="about-img-holder">
-              <img src={Responsive} alt="" />
+              <img src={AboutProf} alt="" />
             </div>
             <div className="about-bio">
               <h2>Who am I?</h2>
-              <p>I'm a Junior Full-Stack Developer from Hungary. I have high passing for interactive dynamic websites</p>
+              <p>I'm a Junior Full-Stack Developer from Hungary. 
+                <br />I have a high passion to create interactive dynamic websites.  As well as with great functions and solid Back-End.
+                <br/>
+                <br />Let's create something special.</p>
 
             </div>
           </div>

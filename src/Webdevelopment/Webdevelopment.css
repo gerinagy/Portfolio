@@ -80,21 +80,44 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: darkseagreen;
 }
 
 .about-info-wrapper, .about-languages{
   width: 40%;
-  margin: 200px 0 0 0; 
+  padding: 100px 0 100px 0; 
+  background-color: dimgray;
+  
 
 }
 
 .about-img-holder {
   display: flex;
   justify-content: space-evenly;
+  background-color: darkviolet;
 }
 
 .about-img-holder img{
   width: 50%;
+  border-radius: 10px ;
+
+}
+
+.about-bio {
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+
+  background-color: orange;
+
+}
+
+.about-bio a {
+  text-decoration: none;
+
 }
 
 
@@ -102,9 +125,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px;
+  margin: 10px;
   height: 30px;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .language-title {
