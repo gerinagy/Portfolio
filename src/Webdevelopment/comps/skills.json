@@ -1,0 +1,45 @@
+[
+
+  {
+    "id": 1,
+    "skill": "CSS",
+    "percentage": "80"
+  },
+  {
+    "id": 2,
+    "skill": "HTML",
+    "percentage": "80"
+  },
+  {
+    "id": 3,
+    "skill": "React",
+    "percentage": "50"
+  },
+  {
+    "id": 4,
+    "skill": "JavaScript",
+    "percentage": "50"
+  },
+  {
+    "id": 5,
+    "skill": "Python",
+    "percentage": "20"
+  },
+  {
+    "id": 6,
+    "skill": "Django",
+    "percentage": "20"
+  },
+  {
+    "id": 7,
+    "skill": "WordPress",
+    "percentage": "30"
+  },
+  {
+    "id": 8,
+    "skill": "Photoshop",
+    "percentage": "60"
+  }
+
+
+]
