@@ -35,6 +35,7 @@ function Webdevelopment() {
         <div className="about-title">
           <h2>About</h2>
         </div>
+        <div className="about-line"></div>
         <div className="skills-wrapper">
           <div className="skill-info-wrapper">
             <div className="skill-image">
@@ -62,6 +63,8 @@ function Webdevelopment() {
           </div>
         </div>
 
+        <div className="about-line"></div>
+
         <div className="about-content-wrapper">
 
           <div className="about-info-wrapper">
@@ -73,7 +76,7 @@ function Webdevelopment() {
               <p>I'm a Junior Full-Stack Developer from Hungary. 
                 <br />I have a high passion to create interactive dynamic websites.  As well as with great functions and solid Back-End.
                 <br/>
-                <br />Let's create something special.</p>
+                <br /><a href="" style={{color: "blue" }}> Let's create something special. </a> </p>
 
             </div>
           </div>
