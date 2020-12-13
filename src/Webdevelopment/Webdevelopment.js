@@ -9,6 +9,7 @@ import AboutProf from '../Assets/image/sunsetprof.jpg';
 
 // Components
 import { LangList } from './comps/LangList';
+import { Projects } from './comps/Projects';
 
 
 function Webdevelopment() {
@@ -96,7 +97,13 @@ function Webdevelopment() {
 
 
       <section className="webdev-projects">
+        <div className="projects-title">
+          <h2>Projects</h2>
+        </div>
+        <div className="about-line"></div>
 
+        <Projects/>
+    
       </section>
 
     </div>
