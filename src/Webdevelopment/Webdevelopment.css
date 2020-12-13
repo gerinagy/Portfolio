@@ -25,9 +25,8 @@
 }
 
 a {
-  display: flex;
   width: 200px;
-  justify-content: center;
+
 
 }
 
@@ -163,7 +162,8 @@ a {
   align-items: center;
   text-align: center;
 
-  width: 90%;
+  
+
 }
 
 .project-items {
@@ -175,6 +175,7 @@ a {
   max-width: 1200px;
   width: 100%;
   justify-content: space-evenly;
+
 
 }
 
@@ -188,6 +189,7 @@ a {
   height: 400px;
   width: 400px;
   background-color: cadetblue;
+  overflow: hidden;
 }
 
 .project-item h1 {

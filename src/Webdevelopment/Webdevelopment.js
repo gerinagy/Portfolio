@@ -77,7 +77,7 @@ function Webdevelopment() {
               <p>I'm a Junior Full-Stack Developer from Hungary. 
                 <br />I have a high passion to create interactive dynamic websites.  As well as with great functions and solid Back-End.
                 <br/>
-                <br /><a href="" style={{color: "blue" }}> Let's create something special. </a> </p>
+                <br /><a href=""> Let's create something special. </a> </p>
 
             </div>
           </div>
