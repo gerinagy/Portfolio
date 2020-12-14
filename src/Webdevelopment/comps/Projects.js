@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ProjectsData from './projectsData.json';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 
 
@@ -20,7 +20,7 @@ export const Projects = () => {
 
                 <div className="project-item">
                   <div>
-                    <img src={`../../Assets/ProjectsImg/${projectDetails.image}`} />
+                    <img src={`../../Assets/ProjectsImg/${projectDetails.image}`} alt=""/>
                     <h1>{projectDetails.title}</h1>
                   </div>
                 </div>

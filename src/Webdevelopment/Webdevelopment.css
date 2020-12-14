@@ -9,13 +9,11 @@
 }
 
 .webdev-content{
-  width: 90%;
   position: relative;
   background-color: coral;
 }
 
 .first-row {
-
   display: flex;
 }
 
@@ -26,8 +24,6 @@
 
 a {
   width: 200px;
-
-
 }
 
 
