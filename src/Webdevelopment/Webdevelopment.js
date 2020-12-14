@@ -10,6 +10,7 @@ import AboutProf from '../Assets/image/sunsetprof.jpg';
 // Components
 import { LangList } from './comps/LangList';
 import { Projects } from './comps/Projects';
+import Line from '../components/Line';
 
 
 function Webdevelopment() {
@@ -36,7 +37,7 @@ function Webdevelopment() {
         <div className="about-title">
           <h2>About</h2>
         </div>
-        <div className="about-line"></div>
+        <Line />
         <div className="skills-wrapper">
           <div className="skill-info-wrapper">
             <div className="skill-image">
@@ -64,7 +65,6 @@ function Webdevelopment() {
           </div>
         </div>
 
-        <div className="about-line"></div>
 
         <div className="about-content-wrapper">
 
@@ -82,25 +82,20 @@ function Webdevelopment() {
             </div>
           </div>
 
-
-
           <div className="about-languages">
-
             <LangList />
-
           </div>
 
         </div>
-
 
       </section>
 
 
       <section className="webdev-projects">
-        <div className="projects-title">
+        <div className="about-title">
           <h2>Projects</h2>
         </div>
-        <div className="about-line"></div>
+        <Line/>
 
         <Projects/>
 
