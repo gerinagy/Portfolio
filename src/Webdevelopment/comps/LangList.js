@@ -16,8 +16,8 @@ export const LangList = () => {
                 initial={{ width: 0 }}
                 animate={{ width: skillDetails.percentage + '%' }}
                 transition={{ duration: 1 }}
-                style={{animationDelay: "2s"}}
-                >
+                style={{ animationDelay: "2s" }}
+              >
                 <p>{skillDetails.percentage}%</p>
               </motion.div>
             </div>

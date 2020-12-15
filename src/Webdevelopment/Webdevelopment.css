@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 
 .webdev-hero {
   height: 100vh;
@@ -180,14 +183,17 @@ a {
 }
 
 .project-item {
-
+  width: 350px;
+  height: 350px;
   background-color: olivedrab;
   position: relative;
 }
 
 .project-item img {
-  height: 400px;
-  width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
   background-color: cadetblue;
   overflow: hidden;
 }

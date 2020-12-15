@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Webdevelopment.css';
 
 // Images
@@ -14,6 +14,16 @@ import Line from '../components/Line';
 
 
 function Webdevelopment() {
+
+  // const sectionRef = useRef(null);
+
+  // const intersection = useIntersection(sectionRef, {
+  //   root: null,
+  //   rootMargin: "0px",
+  //   threshold: 1
+  // });
+
+  // intersection && intersection.intersectionRatio < 1 ?
 
 
 
