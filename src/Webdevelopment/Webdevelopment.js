@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Webdevelopment.css';
 
 // Images
@@ -11,6 +11,7 @@ import AboutProf from '../Assets/image/sunsetprof.jpg';
 import { LangList } from './comps/LangList';
 import { Projects } from './comps/Projects';
 import Line from '../components/Line';
+import ProjectModal from './comps/ProjectModal';
 
 
 function Webdevelopment() {
@@ -26,7 +27,7 @@ function Webdevelopment() {
   // intersection && intersection.intersectionRatio < 1 ?
 
 
-
+  const [selectedProject, setSelectedProject] = useState(null);
 
 
   return (
@@ -107,7 +108,9 @@ function Webdevelopment() {
         </div>
         <Line/>
 
-        <Projects/>
+        <Projects setSelectedProject={setSelectedProject}/>
+
+        {selectedProject && <ProjectModal selectedProject={selectedProject} setSelectedProject={setSelectedProject} />}
 
 
     
