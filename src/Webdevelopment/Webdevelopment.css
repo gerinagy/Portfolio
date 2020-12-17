@@ -184,18 +184,17 @@ a {
 
 .project-item {
   width: 350px;
-  height: 350px;
   background-color: olivedrab;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  object-fit: cover;
+  align-items: center;
+
 }
 
 .project-item img {
-  width: 130%;
-
+  height: 350px;
 
   background-color: cadetblue;
   overflow: hidden;

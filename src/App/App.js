@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+
+// Import Tools
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 // Import Components
 import Nav from '../components/Nav';
 import Home from '../Home/Home';
@@ -9,8 +13,6 @@ import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../components/Footer';
 
 
-// Import Tools
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 function App() {
