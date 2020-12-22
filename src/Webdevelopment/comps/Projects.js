@@ -1,4 +1,5 @@
 import React from 'react'
+import Project from './Project'
 
 import ProjectsData from './projectsData.json';
 // import { motion } from 'framer-motion';
@@ -7,30 +8,14 @@ import ProjectsData from './projectsData.json';
 
 
 
-export const Projects = ({ setSelectedProject }) => {
+export const Projects = (props) => {
   return (
     <div>
-      <div className="project-wrapper">
-        <div className="project-filters">
-          <h1>All</h1>
-        </div>
-        <div className="project-items">
-          {ProjectsData && ProjectsData.map((projectDetails, key) => (
-              <>
 
-              <div className="project-item" key={projectDetails.id} onClick={() => setSelectedProject(`/ProjectsImg/${projectDetails.image}`)}>
-                  <div>
-                    <img src={`/ProjectsImg/${projectDetails.image}`} alt=""/>
-                    <h1>{projectDetails.title}</h1>
-                  </div>
-                </div>
-
-
-              </>
-
-            )
-
-          )}
+      <div className="project-items">
+        <div className="project-item">
+          <img src={`/ProjectsImg/${props.image}`} alt="" />
+          <h1>{props.title}</h1>
         </div>
       </div>
     </div>

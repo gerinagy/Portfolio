@@ -15,7 +15,7 @@ const ProjectModal = ({ selectedProject, setSelectedProject }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <motion.div className="project-modal" src={selectedProject.id} alt="project"
+      <motion.div className="project-modal" src={selectedProject} alt="project"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
       >
