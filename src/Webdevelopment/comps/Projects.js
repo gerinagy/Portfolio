@@ -1,24 +1,30 @@
-import React from 'react'
-import Project from './Project'
-
-import ProjectsData from './projectsData.json';
+import React, { Component } from 'react'
 // import { motion } from 'framer-motion';
 
 
+class Projects extends Component {
+
+  state = {
+    title: this.props.title,
+    description: this.props.description,
+    image: this.props.image
+  }
 
 
 
-export const Projects = (props) => {
-  return (
-    <div>
+  handleClick = () => {
+    this.props.onProjectClick(this.state);
+  }
 
-      <div className="project-items">
-        <div className="project-item">
-          <img src={`/ProjectsImg/${props.image}`} alt="" />
-          <h1>{props.title}</h1>
-        </div>
+  render() {
+    return (
+      <div className="project-item" onClick={this.handleClick}>
+        <img src={this.props.image} alt="" />
+        <h1>{this.props.title}</h1>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
+
+export default Projects;

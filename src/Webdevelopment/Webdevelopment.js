@@ -10,9 +10,9 @@ import AboutProf from '../Assets/image/sunsetprof.jpg';
 
 // Components
 import { LangList } from './comps/LangList';
-import { Projects } from './comps/Projects';
+import Projects from './comps/Projects';
 import Line from '../components/Line';
-// import ProjectModal from './comps/ProjectModal';
+import ProjectModal from './comps/ProjectModal';
 
 // Data
 // import ProjectsData from './comps/projectsData.json';
@@ -24,12 +24,24 @@ class Webdevelopment extends Component {
 
   state = {
     projectList: [],
-    showProjects: null
-  };
+    image: null,
+    title: null,
+    checking: false,
+    tempProd: 0,
+    show: false
+  }
 
-  // const projectModalHandler = () => {
+  checkProjectHandler = (prod) => {
+    console.log(prod.price);
+    console.log(prod.description);
+    this.setState({ tempProd: prod })
+    this.setState({ checking: true });
+  }
 
-  // }
+  cancelCheckingHandler = () => {
+    this.setState({ checking: false });
+  }
+
 
   componentDidMount() {
 
@@ -47,17 +59,20 @@ class Webdevelopment extends Component {
 
   render() {
 
-    const projects = this.state.projectList.map(detail => {
-      return <Projects key={detail.id} title={detail.title} image={detail.image}/>
+    const projects = this.state.projectList.map((detail, index) => {
+
+      return (
+        <Projects key={detail.id}
+                  title={detail.title}
+                  description={detail.description}
+                  image={detail.image}
+                  onProjectClick={this.checkProjectHandler} />
+      )
     });
 
 
-    // if ( this.state.showProjects)  {
-    //   project = <Projects 
-    //     title={projectDetails.title}
-    //     image={projectDetails.image}
-    //     key={projectDetails.id}/>
-    // }
+
+
 
     return (
       <div>
@@ -139,13 +154,24 @@ class Webdevelopment extends Component {
           <div className="project-wrapper">
             <div className="project-filters">
               <h1>All</h1>
-              {projects}
+              <div className="project-items">
+
+                {projects}
+
+              </div>
             </div>
 
           </div>
 
 
         </section>
+
+        <ProjectModal
+          show={this.state.checking} modalClosed={this.cancelCheckingHandler}
+          projectTitle={this.state.tempProd.title}
+          projectImage={this.state.tempProd.image}
+          projectDescription={this.state.tempProd.description}
+        />
 
       </div>
     );

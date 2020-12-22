@@ -1,42 +1,68 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Aux from './aux'
 import { motion } from 'framer-motion';
+import Backdrop from './Backdrop';
 
-const ProjectModal = ({ selectedProject, setSelectedProject }) => {
 
-  const handleClick = (e) => {
-    if (e.target.classList.contains('backdrop')) {
-      setSelectedProject(null);
-    }
+
+class ProjectModal extends Component {
+
+  state = {
+    description: true,
+    review: false,
+    info: false
+  }
+
+  showHandler = () => {
+    this.setState({ show: !this.state.show })
   }
 
 
-  return (
-    <motion.div className="backdrop" onClick={handleClick}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-    >
-      <motion.div className="project-modal" src={selectedProject} alt="project"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-      >
 
-        <div className="project-modal-image">
-          <img src={selectedProject} alt="" />
-
-
-        </div>
-        <div className="project-modal-description">
-          <h1>{selectedProject}</h1>
-          <p>{selectedProject.description}</p>
-
-        </div>
+  // handleClick = (e) => {
+  //   if (e.target.classList.contains('backdrop')) {
+  //     this.setState({ this.props.modalClosed })
+  //     // onClick = { this.props.modalClosed }
+  //   }
+  // }
 
 
 
-      </motion.div>
+  render() {
+    return (
+      <Aux>
+        <motion.Backdrop
+          show={this.props.show} onClick={this.props.modalClosed}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          <motion.div className="project-modal"
+            style={{ opacity: this.props.show ? '1' : '0' }}
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+          >
+            <a href="#close" className="close" onClick={this.props.modalClosed} />
 
-    </motion.div>
-  )
+            <div className="project-modal-image">
+              <img src={this.props.projectImage} alt="" />
+
+
+            </div>
+            <div className="project-modal-description">
+              <h1>{this.props.projectTitle}</h1>
+              <p>{this.props.projectDescription}</p>
+
+            </div>
+
+
+
+          </motion.div>
+
+        </motion.Backdrop>
+      </Aux>
+    )
+  }
 }
+
 
 export default ProjectModal;
