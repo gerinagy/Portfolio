@@ -9,6 +9,7 @@ class Projects extends Component {
     description: this.props.description,
     image: this.props.image,
     skill: this.props.skill,
+    url: this.props.url,
 
     isHovered: false
   }

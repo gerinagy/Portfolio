@@ -42,7 +42,7 @@
 
 }
 
-.social-icons a, i{
+.social-icons a, .social-icons i{
   width: 100%;
   height: auto;
   background-color: transparent;
@@ -54,7 +54,7 @@
 
 }
 
-i:hover {
+.social-icons i:hover {
   color: #9A735F;
   transform: scale(0.8);
 }

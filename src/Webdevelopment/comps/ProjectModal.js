@@ -10,10 +10,11 @@ class ProjectModal extends Component {
     // }
 
     // const asdasd = () => {
-    //   console.log("asdasd")
+    //   console.log(this.props.Url)
     // }
 
-    console.log(this.props.url)
+
+    
 
     return (
       <motion.div className="backdrop2"
@@ -21,8 +22,7 @@ class ProjectModal extends Component {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <div className="project-modal"
-        >
+        <div className="project-modal">
           <span className="close" onClick={this.props.modalClosed} />
 
           <div className="project-modal-image">
