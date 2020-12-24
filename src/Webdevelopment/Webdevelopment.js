@@ -24,22 +24,22 @@ class Webdevelopment extends Component {
 
   state = {
     projectList: [],
-    image: null,
-    title: null,
     checking: false,
     tempProd: 0,
     show: false
   }
 
   checkProjectHandler = (prod) => {
-    console.log(prod.price);
-    console.log(prod.description);
     this.setState({ tempProd: prod })
-    this.setState({ checking: true });
+    this.setState({ checking: true })
+    this.setState({ show: true })
   }
 
-  cancelCheckingHandler = () => {
-    this.setState({ checking: false });
+  cancelCheckingHandler = (e) => {
+    if (e.target.classList.contains('backdrop2') || 
+        e.target.classList.contains('close')) {
+      this.setState({ checking: false });
+    }
   }
 
 
@@ -47,8 +47,6 @@ class Webdevelopment extends Component {
 
     axios.get('/ProjectsData.json')
       .then(response => {
-        console.log(Object.values(response.data));
-
         this.setState({ projectList: Object.values(response.data) })
       })
   }
@@ -63,14 +61,32 @@ class Webdevelopment extends Component {
 
       return (
         <Projects key={detail.id}
-                  title={detail.title}
-                  description={detail.description}
-                  image={detail.image}
-                  onProjectClick={this.checkProjectHandler} />
+          title={detail.title}
+          skill={detail.skill}
+          description={detail.description}
+          image={detail.image}
+          url={detail.url}
+          onProjectClick={this.checkProjectHandler}
+          onClick={this.checkProjectHandler} />
       )
     });
 
+    let modal = null;
 
+    if (this.state.checking) {
+      modal = 
+      
+          <ProjectModal
+            show={this.state.checking}
+            modalClosed={this.cancelCheckingHandler}
+            Title={this.state.tempProd.title}
+            Skill={this.state.tempProd.skill}
+            Image={this.state.tempProd.image}
+            Description={this.state.tempProd.description}
+            Url={this.state.tempProd.url}
+          />
+        
+    }
 
 
 
@@ -83,7 +99,7 @@ class Webdevelopment extends Component {
               <h1 className="webdev-hero-name"> Gergo Nagy.</h1>
             </div>
             <h1>I'm a Junior full-stack web developer.</h1>
-            <a href="#about"><h3>View my work</h3> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+            <a href="#about"><h3>View my work</h3> <i className="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
           </div>
         </section>
 
@@ -132,7 +148,7 @@ class Webdevelopment extends Component {
                 <p>I'm a Junior Full-Stack Developer from Hungary.
                 <br />I have a high passion to create interactive dynamic websites.  As well as with great functions and solid Back-End.
                 <br />
-                  <br /><a href=""> Let's create something special. </a> </p>
+                  <br /><a href="/"> Let's create something special. </a> </p>
 
               </div>
             </div>
@@ -153,25 +169,19 @@ class Webdevelopment extends Component {
           <Line />
           <div className="project-wrapper">
             <div className="project-filters">
-              <h1>All</h1>
+
               <div className="project-items">
-
                 {projects}
-
               </div>
+
             </div>
 
           </div>
 
-
+          {modal}
         </section>
 
-        <ProjectModal
-          show={this.state.checking} modalClosed={this.cancelCheckingHandler}
-          projectTitle={this.state.tempProd.title}
-          projectImage={this.state.tempProd.image}
-          projectDescription={this.state.tempProd.description}
-        />
+        
 
       </div>
     );

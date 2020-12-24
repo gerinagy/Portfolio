@@ -9,14 +9,6 @@ const Modal = ({ selectedImg, setSelectedImg }) => {
     }  
   }
 
-  // const keyPress = (e) => {
-  //   if (e.keyCode === 27) {
-  //     console.log("esc");
-  //     setSelectedImg(null);
-  //   }
-  // }
-  // onKeyPress = { keyPress }
-
   return (
     <motion.div className="backdrop" onClick={handleClick} 
       initial={{ opacity: 0 }}

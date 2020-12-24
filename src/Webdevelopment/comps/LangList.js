@@ -7,7 +7,7 @@ export const LangList = () => {
     <div>
       {Skill.map((skillDetails, index) => {
         return (
-          <div className="language-items">
+          <div className="language-items" key={index}>
             <div className="language-title">
               <p>{skillDetails.skill}</p>
             </div>

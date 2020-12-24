@@ -54,9 +54,9 @@ const Burger = () => {
 
                     <div className="profile-social">
 
-                      <a href="mailto:nagy.gergi6@gmail.com"><i class="fa fa-envelope"></i></a>
+                      <a href="mailto:nagy.gergi6@gmail.com"><i className="fa fa-envelope"></i></a>
 
-                      <a href="https://github.com/gerinagy" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i>
+                      <a href="https://github.com/gerinagy" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i>
                       </a>
 
 
@@ -73,12 +73,12 @@ const Burger = () => {
 
 
 
-                      <a href="https://facebook.com/gergo.nagy.545/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://facebook.com/gergo.nagy.545/" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook" aria-hidden="true"></i></a>
 
-                      <a href="https://instagram.com/ngeri6/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i>
+                      <a href="https://instagram.com/ngeri6/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram" aria-hidden="true"></i>
                       </a>
 
-                      <a href="https://www.youtube.com/channel/UCXUUylIJiLE_uBLszlAqNAA" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                      <a href="https://www.youtube.com/channel/UCXUUylIJiLE_uBLszlAqNAA" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube" aria-hidden="true"></i></a>
 
                     </div>
                   </div>

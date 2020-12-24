@@ -1,68 +1,51 @@
 import React, { Component } from 'react'
-import Aux from './aux'
 import { motion } from 'framer-motion';
-import Backdrop from './Backdrop';
-
-
 
 class ProjectModal extends Component {
 
-  state = {
-    description: true,
-    review: false,
-    info: false
-  }
-
-  showHandler = () => {
-    this.setState({ show: !this.state.show })
-  }
-
-
-
-  // handleClick = (e) => {
-  //   if (e.target.classList.contains('backdrop')) {
-  //     this.setState({ this.props.modalClosed })
-  //     // onClick = { this.props.modalClosed }
-  //   }
-  // }
-
-
-
   render() {
+
+    // const closing = () => {
+    //   console.log("yes");
+    // }
+
+    // const asdasd = () => {
+    //   console.log("asdasd")
+    // }
+
+    console.log(this.props.url)
+
     return (
-      <Aux>
-        <motion.Backdrop
-          show={this.props.show} onClick={this.props.modalClosed}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+      <motion.div className="backdrop2"
+        show={this.props.show} onClick={this.props.modalClosed}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
+        <div className="project-modal"
         >
-          <motion.div className="project-modal"
-            style={{ opacity: this.props.show ? '1' : '0' }}
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-          >
-            <a href="#close" className="close" onClick={this.props.modalClosed} />
+          <span className="close" onClick={this.props.modalClosed} />
 
-            <div className="project-modal-image">
-              <img src={this.props.projectImage} alt="" />
+          <div className="project-modal-image">
+            <img src={this.props.Image} alt="" />
+          </div>
 
+          <div className="project-modal-description">
+            <h2>{this.props.Title}</h2>
 
-            </div>
-            <div className="project-modal-description">
-              <h1>{this.props.projectTitle}</h1>
-              <p>{this.props.projectDescription}</p>
+            <h3>{this.props.Skill}</h3>
 
-            </div>
+            <div style={{ height: "1px", width: "100%", backgroundColor: "#333", margin: "20px 0", opacity: ".3" }} />
 
+            <p>{this.props.Description}</p>
 
+            <a href={this.props.Url} target="_blank" rel="noopener noreferrer">Visit Website</a>
 
-          </motion.div>
+          </div>
 
-        </motion.Backdrop>
-      </Aux>
+        </div>
+      </motion.div>
     )
   }
 }
-
 
 export default ProjectModal;

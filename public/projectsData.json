@@ -4,45 +4,52 @@
     "filter": "wordpress",
     "title": "KiteboardingWays Kiteschool",
     "skill": "WordPress",
-    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client.",
-    "image": "/ProjectsImg/Kiteboardingways.png"
+    "image": "/ProjectsImg/Kiteboardingways.png",
+    "url": "https://kiteboardingways.surf/",
+    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client."
 
 
   },
+
   {
     "id": 2,
     "filter": "wordpress",
-    "title": "KiteVisions",
+    "title": "Kite Visions",
     "skill": "WordPress",
-    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client.",
-    "image": "/ProjectsImg/kitevisions.png"
+    "image": "/ProjectsImg/kitevisions.png",
+    "url": "https://kitevisions.com/",
+    "description": "KiteVisions website introduces all of its services. Their main service is content creation for companies for the purpose of commercial photos or videos."
 
   },
+
   {
     "id": 3,
     "filter": "wordpress",
     "title": "KiteboardingWays Kiteschool",
     "skill": "React",
-    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client.",
-    "image": "/ProjectsImg/Kiteboardingways.png"
+    "image": "/ProjectsImg/Kiteboardingways1.png",
+    "url": "https://kitevisions.com/",
+    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client."
 
   },
+
   {
     "id": 4,
     "filter": "wordpress",
     "title": "KiteboardingWays Kiteschool",
     "skill": "React",
-    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client.",
-    "image": "/ProjectsImg/kitevisions.png"
+    "image": "/ProjectsImg/kitevisions.png",
+    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client."
 
   },
+  
   {
     "id": 5,
     "filter": "wordpress",
     "title": "KiteboardingWays Kiteschool",
     "skill": "React",
-    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client.",
-    "image": "/ProjectsImg/Kiteboardingways.png"
+    "image": "/ProjectsImg/Kiteboardingways.png",
+    "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client."
 
   }
 ]
