@@ -53,8 +53,6 @@ class Webdevelopment extends Component {
 
 
 
-
-
   render() {
 
     const projects = this.state.projectList.map((detail, index) => {
@@ -87,18 +85,17 @@ class Webdevelopment extends Component {
           />
     }
 
-
+    // A Junior full - stack web developer.
 
     return (
       <div>
         <section className="webdev-hero">
-          <div className="webdev-content">
-            <div className="first-row">
-              <h1>Hello, I'm </h1>
-              <h1 className="webdev-hero-name"> Gergo Nagy.</h1>
-            </div>
-            <h1>I'm a Junior full-stack web developer.</h1>
-            <a href="#about"><h3>View my work</h3> <i className="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+          <div className="webdev-left">
+            <h2>Hi, I'm 
+            <br/> Gergo Nagy.</h2>
+          </div>
+          <div className="webdev-right">
+            <h3>A Junior Full-stack web developer.</h3>
           </div>
         </section>
 
@@ -135,7 +132,7 @@ class Webdevelopment extends Component {
             </div>
           </div>
 
-
+        <Line/>
           <div className="about-content-wrapper">
 
             <div className="about-info-wrapper">

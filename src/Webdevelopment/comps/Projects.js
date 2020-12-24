@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 class Projects extends Component {
@@ -10,7 +10,6 @@ class Projects extends Component {
     image: this.props.image,
     skill: this.props.skill,
     url: this.props.url,
-
     isHovered: false
   }
 
@@ -28,16 +27,18 @@ class Projects extends Component {
   }
 
   render() {
+    
     return (
-      <div className="project-item"
+      <motion.div className="project-item"
         onMouseEnter={this.isHover} onMouseLeave={this.isNotHover}
+        initial={{ scale: 0}}
+        animate= {{scale: 1}}
+        transition={{ duration: 1 }}
+        
       >
         <img src={this.props.image} alt="" />
         {this.state.isHovered ?
-          <div style={{
-            backgroundColor: "white", height: "100%", width: "100%", position: "absolute", top: "0",
-            left: "0"
-          }} >
+          <div className="project-hover" >
             <h1>{this.props.title}
               <p>{this.props.skill}</p>
             </h1>
@@ -45,10 +46,17 @@ class Projects extends Component {
             <span onClick={this.handleClick}>More Details</span>
           </div> : null
         }
-      </div>
+      </motion.div>
     )
   }
 }
 
 
 export default Projects;
+
+
+
+// style = {{
+//   backgroundColor: "white", height: "100%", width: "100%", position: "absolute", top: "0",
+//     left: "0"
+// }} 

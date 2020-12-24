@@ -1,6 +1,3 @@
-*{
-  scroll-behavior: smooth;
-}
 
 .webdev-hero {
   height: 100vh;
@@ -9,25 +6,38 @@
   background-color: #326D75;
   display: flex;
   justify-content: space-evenly;
+  background-color: rgb(110, 110, 110);
 }
 
-.webdev-content{
-  position: relative;
-  background-color: coral;
-}
-
-.first-row {
+.webdev-left{
+  width: 50%;
+  height: 100%;
+  background-color: black;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.webdev-hero-name {
-  padding: 0 10px;
-  color: rgba(35, 128, 156, 0.432);
+.webdev-left h2 {
+  width: 150px;
+  color: orange;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-a {
-  width: 200px;
+.webdev-right {
+   width: 50%;
+  height: 100%;
+  background-color: orange;
+   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.webdev-right h3 {
+  width: 150px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 
 
@@ -107,16 +117,14 @@ a {
 .about-bio {
   padding: 20px;
   color: black;
-
   text-align: center;
   max-width: 400px;
-
-
 
 }
 
 .about-bio a {
   text-decoration: none;
+  color: turquoise;
 
 }
 
@@ -284,6 +292,7 @@ a {
 }
 
 .project-modal-description {
+  position: relative;
   text-align: left;
   margin: 20px;
   overflow: hidden;
@@ -293,17 +302,31 @@ a {
   opacity: 60%;
   font-weight: 500;
   margin: 5px 0;
-  background-color: red;
+}
+
+.button-web {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 5px 20px;
+
 }
 
 .project-modal-description a {
   width: fit-content;
   text-decoration: none;
-  color: white;
+  color: black;
   background-color: turquoise;
   padding: 10px;
+  cursor: pointer;
   border: solid 1px black;
+  transition: all .2s ease-in-out;
 }
+
+.project-modal-description a:hover {
+  background-color: transparent;
+  color: black;
+}
+
 
 
 
@@ -335,3 +358,14 @@ a {
   .close:after {
     transform: rotate(-45deg);
   }
+
+
+
+.project-hover {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
