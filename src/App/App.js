@@ -20,9 +20,9 @@ function App() {
 
   const [contactModal, setContactModal] = useState(false)
 
-  const isModalHandle = () => {
-    setContactModal(true)
-  }
+  // const isModalHandle = () => {
+  //   setContactModal(true)
+  // }
 
   return (
     <Router>

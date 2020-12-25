@@ -23,7 +23,7 @@ class Projects extends Component {
   }
 
   isHover = () => {
-    this.setState(prevState => ({ isHovered: true }));
+    this.setState({ isHovered: true });
   }
   isNotHover = () => {
     this.setState({ isHovered: false });
@@ -33,7 +33,7 @@ class Projects extends Component {
     
     return (
       <motion.div className="project-item"
-        onMouseEnter={this.isHover} onMouseLeave={this.isNotHover}
+        onMouseLeave={this.isNotHover} onMouseOver={this.isHover}
         initial={{ scale: 0}}
         animate= {{scale: 1}}
         transition={{ duration: 1 }}

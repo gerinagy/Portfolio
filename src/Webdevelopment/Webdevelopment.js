@@ -66,8 +66,7 @@ class Webdevelopment extends Component {
           url={detail.url}
           github={detail.github}
           githuburl={detail.githuburl}
-          onProjectClick={this.checkProjectHandler}
-          onClick={this.checkProjectHandler} />
+          onProjectClick={this.checkProjectHandler} />
       )
     });
 
