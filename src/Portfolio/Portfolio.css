@@ -5,10 +5,9 @@
 }
 
 /* Portfolio Titles */
-body{
-  font-family: "Noto Serif";
-  color: var(--secondary);
-  background-color: rgba(4, 36, 51, 0.76);
+.portfolio-body{
+  /* background-color: rgba(4, 36, 51, 0.76); */
+ background-color: rgb(109, 109, 109);
 }
 .Portfolio{
   max-width: 1080px;
@@ -59,19 +58,19 @@ form{
   justify-content: center;
   font-size: 20px;
   font-weight: bold;
-  border: solid 1px var(--primary);
+  border: solid 1px black;
   align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  color: var(--primary);
+  color: black;
   transition: color, 0.5s ease-in-out ;
 }
 
 .file-input span:hover {
   background-color: var(--primary);
-  color: rgba(4, 36, 51, 0.76);
+  color: black;
 }
 
 

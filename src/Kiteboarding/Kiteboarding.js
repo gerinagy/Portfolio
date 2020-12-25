@@ -3,7 +3,7 @@ import './Kiteboarding.css';
 
 function Kiteboarding() {
   return (
-    <div>
+    <div className="kiteboarding-body">
       <section className="k-hero-wrapper">
         <div className="k-hero-image">
           <div className="k-hero-content">

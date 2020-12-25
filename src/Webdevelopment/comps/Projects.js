@@ -10,6 +10,9 @@ class Projects extends Component {
     image: this.props.image,
     skill: this.props.skill,
     url: this.props.url,
+    github: this.props.github,
+    githuburl: this.props.githuburl,
+
     isHovered: false
   }
 

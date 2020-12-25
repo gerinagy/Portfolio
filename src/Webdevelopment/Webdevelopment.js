@@ -64,6 +64,8 @@ class Webdevelopment extends Component {
           description={detail.description}
           image={detail.image}
           url={detail.url}
+          github={detail.github}
+          githuburl={detail.githuburl}
           onProjectClick={this.checkProjectHandler}
           onClick={this.checkProjectHandler} />
       )
@@ -82,13 +84,15 @@ class Webdevelopment extends Component {
             Image={this.state.tempProd.image}
             Description={this.state.tempProd.description}
             Url={this.state.tempProd.url}
+            Github={this.state.tempProd.github}
+            GithubUrl={this.state.tempProd.githuburl}
           />
     }
 
     // A Junior full - stack web developer.
 
     return (
-      <div>
+      <div className="webdev-body">
         <section className="webdev-hero">
           <div className="webdev-left">
             <h2>Hi, I'm 

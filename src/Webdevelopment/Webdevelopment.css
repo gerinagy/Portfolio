@@ -1,12 +1,14 @@
+.webdev-body {
+    /* background-color: rgb(109, 109, 109); */
+    background-color: #43464b;
+}
 
 .webdev-hero {
   height: 100vh;
   align-items: center;
   text-align: center;
-  background-color: #326D75;
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(110, 110, 110);
 }
 
 .webdev-left{
@@ -19,10 +21,14 @@
 }
 
 .webdev-left h2 {
-  width: 150px;
+  width: 200px;
   color: orange;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-weight: 400;
+  font-size: 40px;
 }
+
 
 .webdev-right {
    width: 50%;
@@ -34,8 +40,11 @@
 }
 
 .webdev-right h3 {
-  width: 150px;
+  width: 250px;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: right;
+   padding-right: 5px;
+   font-size: 30px;
 }
 
 
@@ -49,7 +58,7 @@
 }
 
 .about-title h2{
-  color: black;
+  color: #eee;
   font-size: 25px;
   padding: 30px;
   text-align: center;
@@ -116,15 +125,18 @@
 
 .about-bio {
   padding: 20px;
-  color: black;
+  color: #eee;
   text-align: center;
   max-width: 400px;
+}
 
+.about-bio h2 {
+  color: #eee;
 }
 
 .about-bio a {
   text-decoration: none;
-  color: turquoise;
+  color: orange ;
 
 }
 
@@ -230,6 +242,7 @@
   font-size: 15px;
   font-weight: 400;
   border: 2px solid turquoise;
+  border-radius: 10px;
   padding: 10px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -277,6 +290,7 @@
   position: relative;
   width: 100%;
   height: 60%;
+  min-height: 300px;
   background-color: #333;
   overflow: hidden;
 
@@ -306,27 +320,34 @@
 
 .button-web {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px 0 5px 20px;
+  margin: 20px 0 5px 0px;
 
 }
 
-.project-modal-description a {
+.button-web-a {
   width: fit-content;
   text-decoration: none;
-  color: black;
-  background-color: turquoise;
+  color: white;
+  background-color: rgb(12, 12, 12);
   padding: 10px;
   cursor: pointer;
   border: solid 1px black;
+  border-radius: 10px;
   transition: all .2s ease-in-out;
 }
 
-.project-modal-description a:hover {
+.button-web-a:hover {
   background-color: transparent;
   color: black;
 }
 
+.github-code {
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+}
 
 
 

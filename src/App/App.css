@@ -2,8 +2,10 @@
   list-style: none;
    box-sizing: border-box;
    text-decoration: none;
+   overflow-x: hidden;
    scroll-behavior: smooth;
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 body{
   background-color: whitesmoke;
@@ -11,4 +13,22 @@ body{
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.contact-backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+}
+
+.contact-modal {
+  height: 80%;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.61);
+  z-index: 999;
 }

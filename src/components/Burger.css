@@ -71,7 +71,7 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: rgba(54, 54, 54, 0.9);
+    background-color: rgba(54, 54, 54, 0.95);
     width: 100%;
     max-width: 1000px;
     min-width: 500px;
@@ -158,7 +158,8 @@
     padding: 10px;
     margin: 20px;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color: whitesmoke;
 }
 
 .profileBio h1 {
@@ -197,6 +198,8 @@
 .profile-social {
     font-size: 20px;
     display: flex;
+    justify-content: space-evenly;
+
     
 
 }

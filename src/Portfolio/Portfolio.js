@@ -12,12 +12,14 @@ function Portfolio() {
 
 
   return (
-    <div className="Portfolio" >
-      <Title/>
-      <MyImageGrid setSelectedImg={setSelectedImg}/>
-      <ImageGrid setSelectedImg={setSelectedImg} />
-      { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }
-    </div>
+    <section className="portfolio-body">
+      <div className="Portfolio" >
+        <Title />
+        <MyImageGrid setSelectedImg={setSelectedImg} />
+        <ImageGrid setSelectedImg={setSelectedImg} />
+        {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
+      </div>
+    </section>
   );
 }
 
