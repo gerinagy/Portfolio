@@ -17,6 +17,9 @@ const Burger = () => {
     }
   }
 
+  const onLinkHandle = () => {
+    setOpen(false)
+  }
 
   return (
     <div>
@@ -28,10 +31,11 @@ const Burger = () => {
       <aside className={open ? "nav-sidebar active" : "nav-sidebar"}>
         <div className="sidebar-wrapper">
           <ul>
-            <li onClick={() => setOpen(false)}><Link to="/" className="menulinks">Home</Link></li>
-            <li onClick={() => setOpen(false)}><Link to="/Kiteboarding" className="menulinks">Kiteboarding</Link></li>
-            <li onClick={() => setOpen(false)}><Link to="/Webdevelopment" className="menulinks">Web Development</Link></li>
-            <li onClick={() => setOpen(false)}><Link to="/Portfolio" className="menulinks">Portfolio</Link></li>
+            <li onClick={onLinkHandle}><Link to="/" className="menulinks">Home</Link></li>
+            <li onClick={onLinkHandle}><Link to="/Kiteboarding" className="menulinks">Kiteboarding</Link></li>
+            <li onClick={onLinkHandle}><Link to="/Webdevelopment" className="menulinks">Web Development</Link></li>
+            <li onClick={onLinkHandle}><Link to="/Portfolio" className="menulinks">Portfolio</Link></li>
+            <li onClick={onLinkHandle}><Link to="/Contact" className="menulinks">Contact</Link></li>
 
           </ul>
           <div className="profile">

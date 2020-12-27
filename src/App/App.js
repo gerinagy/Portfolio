@@ -11,7 +11,7 @@ import Kiteboarding from '../Kiteboarding/Kiteboarding';
 import Webdevelopment from '../Webdevelopment/Webdevelopment';
 import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../components/Footer';
-import ContactModal from '../components/ContactModal';
+import Contact from '../Contact/Contact';
 
 
 
@@ -33,6 +33,7 @@ function App() {
           <Route path="/Kiteboarding" exact component={Kiteboarding } />
           <Route path="/Webdevelopment" exact component={Webdevelopment} />
           <Route path="/Portfolio" exact component={Portfolio} />
+          <Route path="/Contact" exact component={Contact} />
         </Switch>
         <Footer/>
         {contactModal && <ContactModal setContactModal={setContactModal}/>}
