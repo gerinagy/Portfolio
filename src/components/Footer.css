@@ -61,9 +61,23 @@
 }
 
 
-
-@media (max-width: 750px) {
+@media (max-width: 400px) {
   .footer-content{
+    height: fit-content;
+    padding: 10px 0 10px 0;
+    flex-direction: column-reverse;
 
+
+  }
+
+  .footer-content h2 {
+    width: 100%;
+  }
+
+  .social-icons{
+    background-color: transparent;
+    width: 170px;
+    height: 100%;
+    margin: 10px;
   }
 }

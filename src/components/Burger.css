@@ -133,11 +133,16 @@
     text-align: center;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.089);
+    display: flex;
+    
 
 }
 
 .profile-wrapper{
     margin: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
 
 }
@@ -160,6 +165,7 @@
     font-weight: 300;
     letter-spacing: 2px;
     color: whitesmoke;
+    width: 80%;
 }
 
 .profileBio h1 {
@@ -283,7 +289,6 @@
         width: 100%;
         height: auto;
         overflow: hidden;
-
         border-top: 1px solid rgba(255, 255, 255, 0.089);
 
     }

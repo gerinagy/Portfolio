@@ -163,6 +163,7 @@
   .block-link-1, .block-link-2, .block-link-3{
     flex-direction: column;
     justify-content: flex-end;
+    height: 200px;
 
   }
 

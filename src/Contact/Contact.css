@@ -6,20 +6,103 @@
   background-image: url(../Assets/image/hopok.jpg);
   background-position: center;
   background-size: cover;
-  backdrop-filter: blur(5px);
   overflow: hidden;
   position: relative;
 }
 
 .contact-modal {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 80%;
-  width: 100%;
+  width: 90%;
   max-width: 700px;
-  background-color: rgba(0, 0, 0, 0.89);
-  z-index: 999;
-  box-shadow: 0px 5px 10px 10px;
+  border: white 1px solid;
+  border-radius: 20px;
+  background-color: rgba(34, 80, 92, 0.89); 
+  box-shadow: 0px 3px 10px 0px rgb(11, 32, 37);
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+.contact-title img {
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.contact-title a {
+  text-decoration: none;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+.contact-links {
+  margin: 40px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-links h3 {
+  color: #FFFFFF;
+  margin: 10px;
+  font-style: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.contact-links a {
+  padding: 10px;
+  border: solid white 1px ;
+  border-radius: 10px;
+  margin: 10px;
+  color: #FFFFFF;
+  background-color: transparent;
+  max-width: 500px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease-in-out;
+}
+
+.contact-links a:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact-links i {
+  margin-right: 10px;
+}
+
+
+@media (max-width: 375px) {
+
+  .contact-title img {
+    height: 60px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+  .contact-title a {
+    font-size: 12px;
+  }
+
+  .contact-links {
+  margin: 10px 0px 0px 0px;
+  }
+
+  .contact-links h3 {
+  margin: 5px;
+
+  }
+
+  .contact-links a {
+    padding: 5px;
+    margin: 8px;
+    width: 80%;
+  }
 }

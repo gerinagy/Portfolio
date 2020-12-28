@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 
 // Import Tools
@@ -18,30 +18,19 @@ import Contact from '../Contact/Contact';
 
 function App() {
 
-  const [contactModal, setContactModal] = useState(false)
-
-  // const isModalHandle = () => {
-  //   setContactModal(true)
-  // }
-
   return (
     <Router>
-      <div>
-        <Nav />
-        <Switch >
-          <Route path="/" exact component={Home} />
-          <Route path="/Kiteboarding" exact component={Kiteboarding } />
-          <Route path="/Webdevelopment" exact component={Webdevelopment} />
-          <Route path="/Portfolio" exact component={Portfolio} />
-          <Route path="/Contact" exact component={Contact} />
-        </Switch>
-        <Footer/>
-        {contactModal && <ContactModal setContactModal={setContactModal}/>}
-      </div>
+      <Nav />
+      <Switch >
+        <Route path="/" exact component={Home} />
+        <Route path="/Kiteboarding" exact component={Kiteboarding} />
+        <Route path="/Webdevelopment" exact component={Webdevelopment} />
+        <Route path="/Portfolio" exact component={Portfolio} />
+        <Route path="/Contact" exact component={Contact} />
+      </Switch>
+      <Footer />
     </Router>
   );
 }
-
-
 
 export default App;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Webdevelopment.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 // Images
 import Speed from '../Assets/icons/speed.png';
@@ -13,6 +14,7 @@ import { LangList } from './comps/LangList';
 import Projects from './comps/Projects';
 import Line from '../components/Line';
 import ProjectModal from './comps/ProjectModal';
+
 
 // Data
 // import ProjectsData from './comps/projectsData.json';
@@ -147,7 +149,7 @@ class Webdevelopment extends Component {
                 <p>I'm a Junior Full-Stack Developer from Hungary.
                 <br />I have a high passion to create interactive dynamic websites.  As well as with great functions and solid Back-End.
                 <br />
-                  <br /><a href="/"> Let's create something special. </a> </p>
+                  <br /><Link to="/Contact" className="about-bio-link" > Let's create something special. </Link> </p>
 
               </div>
             </div>

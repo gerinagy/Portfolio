@@ -58,14 +58,12 @@ const Burger = () => {
 
                     <div className="profile-social">
 
-                      <a href="mailto:nagy.gergi6@gmail.com"><i className="fa fa-envelope"></i></a>
+                      <a href="mailto:nagy.gergi6@gmail.com"><i className="fa fa-envelope"/></a>
 
-                      <a href="https://github.com/gerinagy" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i>
+                      <a href="https://www.linkedin.com/in/gergo-nagy-1b12181ab" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i>
                       </a>
 
-
-                      <a to="https://api.whatsapp.com/send?phone=+36%2030%204764%20552" target="_blank" rel="noopener noreferrer"><i className="fa fa-whatsapp" aria-hidden="hidden"></i></a>
-
+                      <a href="https://api.whatsapp.com/send?phone=+36%2030%204764%20552" target="_blank" rel="noopener noreferrer"><i className="fa fa-whatsapp" aria-hidden="true"/> </a>
 
                     </div>
                   </div>
@@ -75,14 +73,11 @@ const Burger = () => {
                   <div className="profile-social-wrapper">
                     <div className="profile-social">
 
+                      <a href="https://facebook.com/gergo.nagy.545/" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook" aria-hidden="true"></i> </a>
 
+                      <a href="https://instagram.com/ngeri6/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram" aria-hidden="true"></i> </a>
 
-                      <a href="https://facebook.com/gergo.nagy.545/" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook" aria-hidden="true"></i></a>
-
-                      <a href="https://instagram.com/ngeri6/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram" aria-hidden="true"></i>
-                      </a>
-
-                      <a href="https://www.youtube.com/channel/UCXUUylIJiLE_uBLszlAqNAA" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube" aria-hidden="true"></i></a>
+                      <a href="https://www.youtube.com/channel/UCXUUylIJiLE_uBLszlAqNAA" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube" aria-hidden="true"></i> </a>
 
                     </div>
                   </div>
