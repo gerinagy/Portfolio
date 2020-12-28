@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Kiteboarding.css';
+
 
 function Kiteboarding() {
   return (
@@ -23,7 +25,7 @@ function Kiteboarding() {
           <br/>Feel free to contact about lessons and details. </p>
           
           <div className="k-buttons">
-            <a href="https://www.eleveightkites.com" target="_blank" rel="noopener noreferrer"><span>contact me</span></a>
+            <Link to="/Contact"><span>contact me</span></Link>
           </div>
         </div>
 
@@ -49,7 +51,7 @@ function Kiteboarding() {
           <div className="k-buttons">
             <a href="https://www.eleveightkites.com/kites" target="_blank" rel="noopener noreferrer"><span>Visit website</span></a>
 
-            <a href="https://www.eleveightkites.com" target="_blank" rel="noopener noreferrer"><span>contact me</span></a>
+            <Link to="/Contact"><span>contact me</span></Link>
           </div>
         </div>
 
