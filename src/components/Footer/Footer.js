@@ -19,7 +19,7 @@ function Footer() {
     <div>
       <footer className='footer'>
         <div className="footer-content">
-          <h2>Hungary © 2020</h2>
+          <h2 className="licence">Hungary © 2020</h2>
           <div className="social-icons">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
@@ -34,7 +34,7 @@ function Footer() {
             <a href="https://api.whatsapp.com/send?phone=+36%2030%204764%20552" target="_blank" rel="noreferrer" ><i className="fa fa-whatsapp"></i></a>
 
           </div>
-          <h2>{ctime}</h2>
+          <h2 className="time">{ctime}</h2>
           
 
         </div>

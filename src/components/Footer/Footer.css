@@ -3,8 +3,6 @@
   width: 100%;
   text-align: center;
   z-index: 9;
-
-
 }
 .footer-content{
   background-color: rgb(34, 34, 34);
@@ -61,13 +59,16 @@
 }
 
 
+
+
+
 @media (max-width: 400px) {
+
+
+
   .footer-content{
-    height: fit-content;
-    padding: 10px 0 10px 0;
+    padding: 0px 0 0px 0;
     flex-direction: column-reverse;
-
-
   }
 
   .footer-content h2 {
@@ -79,5 +80,13 @@
     width: 170px;
     height: 100%;
     margin: 10px;
+  }
+
+  .time {
+    display: none;
+  }
+
+  .licence{
+    display: none;
   }
 }

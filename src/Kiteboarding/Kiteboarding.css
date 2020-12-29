@@ -24,11 +24,13 @@
 }
 
 .k-hero-content{
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
   background-color: transparent;
   align-items: center;
   text-align: left;
   width: 100%;
-  padding-left: 10%;
   font-size: 30px;
 
 }
@@ -54,7 +56,12 @@
 
 /* Teaching Section */
 
-.k-teaching-wrapper, .k-eleveight-wrapper{
+
+
+.card-block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #cfd8df;
   background-image: url(../Assets/image/eleveight-logo.png);
   background-size: 80px;
@@ -65,90 +72,47 @@
   margin-left: 5%;
   margin-right: 5%;
   padding: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-
-.k-teaching-text, .k-eleveight-text {
-  background-color: transparent;
-  padding: 20px;
-  color: black;
-  background-color: red;
-}
-
-.k-teaching-text h3, .k-eleveight-text h3 {
-  font-size: 30px;
-  padding-bottom: 10px;
-}
-
-.k-teaching-text p, .k-eleveight-text p {
-  background-color: transparent;
-}
-
-.k-eleveight-imgtext{
-  height: 100%;
-  width: 100%;
-  justify-content: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: transparent;
   text-align: center;
-  max-height: 400px;
-  max-width: 400px;
-
-
+  overflow: hidden;
 }
 
-.k-eleveight-image-wrapper {
-  height: 95%;
+.kite-content {
+  width: 40%;
+  text-align: left;
+  padding: 5px;
+}
+
+.kite-image {
+  width: 40%;
+  overflow: hidden;
+}
+
+.kite-image img{
   width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-}
+  border-radius: 20px;
 
-.k-eleveight-imgtext h3 {
-  height: 5%;
-  background-color: transparent;
-}
-.k-kite-image{
-  background-image: url("../Assets/image/coolkite.JPG");
-  background-position: center center;
-  background-size: cover;
-  height: 400px;
-  width: 400px;
-  border-radius: 10px;
 }
 
 
-.k-eleveight-image{
-  background-image: url("../Assets/image/FS-LGrey.png");
-  background-position: right top;
-  background-size: cover;
-  width: 100%;
-  background-color: transparent;
-}
 
 .k-buttons {
-  display: flex;
   background-color: transparent;
-  padding-top: 40px;
+  align-items: center;
+  padding: 10px;
 }
 
 .k-buttons a {
   background-color: transparent;
   color: black;
   text-transform: uppercase;
-  border: solid 1px black ;border-radius: 15px;
-  padding: 8px;
-  margin-right: 15px;
+  border: solid 1px black ;
+  border-radius: 15px;
   font-weight: 400;
   font-size: 15px;
+  margin: 30px 5px 5px 0px;
+  padding: 5px;
   height: 30px;
   width: 150px;
-  align-items: center;
   transition: background-color 1s;
 }
 
@@ -156,41 +120,52 @@
   background-color: rgba(255, 255, 255, 0.322);
 }
 
-.k-buttons span {
-  background-color: transparent;
-
-}
-
 
 
 
 @media (max-width: 850px) {
+
+
+  .k-hero-content{
+    font-size: 20px;
+  }
 
   .k-hero-image{
     height: 60vh;
     background-position: center;
   }
 
-  .k-teaching-wrapper, .k-eleveight-wrapper {
+  .card-block {
     display: flex;
     flex-direction: column;
   }
 
-
-  .k-kite-image{
-    background-image: url("../Assets/image/coolkite.JPG");
-    background-position: center center;
-    background-size: cover;
-    height: 250px;
-    width: 250px;
-    border-radius: 10px;
+  .kite-content {
+    width: 90%;
   }
-
-  .k-eleveight-image{
-    background-image: url("../Assets/image/FS-LGrey.png");
-    background-position: right top;
-    background-size: cover;
+  
+  
+  .kite-image {
     width: 100%;
   }
 
+  .kite-image img{
+    width: 60%;
+  
+  }
+  
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
