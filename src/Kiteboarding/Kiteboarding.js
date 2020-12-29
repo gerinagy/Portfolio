@@ -9,11 +9,6 @@ import KitePhoto from '../Assets/image/coolkite.JPG'
 
 function Kiteboarding() {
 
-
-  const kiteTitle = "Eleveight Kites"
-  const kiteText = `Kites. Boards. Equipments. Check the website and contact me for prices.`
-
-
   return (
     <div className="kiteboarding-body">
       <section className="k-hero-wrapper">
@@ -23,12 +18,13 @@ function Kiteboarding() {
             <h1>Kiteboarding</h1>
             <h3>Sport. Train. Fun.</h3>
           </div>
-
         </div>
       </section>
 
-      <section className="card-block">
 
+
+
+      <section className="card-block">
         <div className="kite-content">
           <div className="kite-text">
             <h3>Teaching</h3>
@@ -41,35 +37,30 @@ function Kiteboarding() {
         </div>
 
         <div className="kite-image">
-          <img src={KitePhoto} alt=""/>
+          <img src={KitePhoto} alt="" />
         </div>
-
       </section>
+
+
+
 
       <section className="card-block">
         <div className="kite-image">
-          <img src={Eleveight} alt=""/>
+          <img src={Eleveight} alt="" />
           <h3>2021 FS</h3>
         </div>
-
-
         <div className="kite-content">
-
           <h3>Eleveight Kites</h3>
           <p>Kites. Boards. Equipments.
             <br />Check the website and contact me for prices.
           </p>
           <div className="k-buttons">
-            <a href="https://www.eleveightkites.com/kites" target="_blank" rel="noopener noreferrer">Website</a>
-
             <Link to="/Contact">contact me</Link>
+            <a href="https://www.eleveightkites.com/kites" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
         </div>
-
-
       </section>
 
-      <KiteCard image={Eleveight} title={kiteTitle} text={kiteText} />
     </div>
   )
 }
