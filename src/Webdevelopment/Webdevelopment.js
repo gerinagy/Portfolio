@@ -16,13 +16,9 @@ import Line from '../components/Line';
 import ProjectModal from './comps/ProjectModal';
 
 
-// Data
-// import ProjectsData from './comps/projectsData.json';
 
 
 class Webdevelopment extends Component {
-
-
 
   state = {
     projectList: [],
@@ -38,8 +34,8 @@ class Webdevelopment extends Component {
   }
 
   cancelCheckingHandler = (e) => {
-    if (e.target.classList.contains('backdrop2') || 
-        e.target.classList.contains('close')) {
+    if (e.target.classList.contains('backdrop2') ||
+      e.target.classList.contains('close')) {
       this.setState({ checking: false });
     }
   }
@@ -75,29 +71,26 @@ class Webdevelopment extends Component {
     let modal = null;
 
     if (this.state.checking) {
-      modal = 
-      
-          <ProjectModal
-            show={this.state.checking}
-            modalClosed={this.cancelCheckingHandler}
-            Title={this.state.tempProd.title}
-            Skill={this.state.tempProd.skill}
-            Image={this.state.tempProd.image}
-            Description={this.state.tempProd.description}
-            Url={this.state.tempProd.url}
-            Github={this.state.tempProd.github}
-            GithubUrl={this.state.tempProd.githuburl}
-          />
+      modal =
+        <ProjectModal
+          show={this.state.checking}
+          modalClosed={this.cancelCheckingHandler}
+          Title={this.state.tempProd.title}
+          Skill={this.state.tempProd.skill}
+          Image={this.state.tempProd.image}
+          Description={this.state.tempProd.description}
+          Url={this.state.tempProd.url}
+          Github={this.state.tempProd.github}
+          GithubUrl={this.state.tempProd.githuburl}
+        />
     }
-
-    // A Junior full - stack web developer.
 
     return (
       <div className="webdev-body">
         <section className="webdev-hero">
           <div className="webdev-left">
-            <h2>Hi, I'm 
-            <br/> Gergo Nagy.</h2>
+            <h2>Hi, I'm
+            <br /> Gergo Nagy.</h2>
           </div>
           <div className="webdev-right">
             <h3>A Junior Full-stack web developer.</h3>
@@ -109,7 +102,9 @@ class Webdevelopment extends Component {
           <div className="about-title">
             <h2>About</h2>
           </div>
+
           <Line />
+
           <div className="skills-wrapper">
             <div className="skill-info-wrapper">
               <div className="skill-image">
@@ -118,7 +113,6 @@ class Webdevelopment extends Component {
               <h2>Fast</h2>
               <p>Scaled on fast load times and a great user experience.</p>
             </div>
-
 
             <div className="skill-info-wrapper">
               <div className="skill-image">
@@ -137,9 +131,9 @@ class Webdevelopment extends Component {
             </div>
           </div>
 
-        <Line/>
-          <div className="about-content-wrapper">
+          <Line />
 
+          <div className="about-content-wrapper">
             <div className="about-info-wrapper">
               <div className="about-img-holder">
                 <img src={AboutProf} alt="" />
@@ -150,16 +144,12 @@ class Webdevelopment extends Component {
                 <br />I have a high passion to create interactive dynamic websites.  As well as with great functions and solid Back-End.
                 <br />
                   <br /><Link to="/Contact" className="about-bio-link" > Let's create something special. </Link> </p>
-
               </div>
             </div>
-
             <div className="about-languages">
               <LangList />
             </div>
-
           </div>
-
         </section>
 
 
@@ -170,19 +160,13 @@ class Webdevelopment extends Component {
           <Line />
           <div className="project-wrapper">
             <div className="project-filters">
-
               <div className="project-items">
                 {projects}
               </div>
-
             </div>
-
           </div>
-
           {modal}
         </section>
-
-        
 
       </div>
     );

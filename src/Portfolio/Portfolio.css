@@ -100,22 +100,16 @@ form{
 .portfolio-img-grid {
   display: flex;
   flex-wrap: wrap;
-
   padding-bottom: 50px;
   text-align: center;
-
 }
 
 .portfolio-img-wrap{
-
   position: relative;
   flex: 1 0 200px;
   margin: 5px;
   cursor: pointer;
   overflow: hidden;
-
-
-
 }
  
 .portfolio-img-wrap img{
@@ -150,4 +144,18 @@ form{
   border: 3px solid white;
 }
 
+
+
+
+@media (max-width: 420px) {
+
+  .portfolio-img-wrap{
+  position: relative;
+  flex: 1 0 100px;
+  margin: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+}
 

@@ -10,7 +10,7 @@ const ImageGrid = ({ setSelectedImg }) => {
 
   return (
     <div>
-      <h1 style={{ padding: "0 10px" }}>Share your moments with us. <UploadForm/></h1>
+      <h1 style={{ padding: "0 10px" }}>Share your moments with me. <UploadForm/></h1>
       <div className="portfolio-img-grid">
         { docs && docs.map(doc => (
           <motion.div className="portfolio-img-wrap" key={doc.id}

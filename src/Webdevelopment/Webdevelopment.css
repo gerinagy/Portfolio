@@ -1,5 +1,4 @@
 .webdev-body {
-    /* background-color: rgb(109, 109, 109); */
     background-color: #43464b;
 }
 
@@ -50,7 +49,7 @@
 
 
 
-/* About */
+/* -----------   About   ------------- */
 
 .webdev-about {
   text-align: center;
@@ -68,13 +67,16 @@
 .skills-wrapper {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   padding: 10px;
   color: black;
 }
 
 .skill-info-wrapper {
-  width: 15%;
+  width: 30%;
+  max-width: 300px;
   margin: 100px 0;
   padding: 20px;
   background-color: rgba(196, 196, 196, 0.733);
@@ -175,7 +177,7 @@
 
 
 
-/* Projects */
+/* ------------  Projects ------------- */
 
 
 .project-wrapper {
@@ -208,6 +210,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5px;
 
 }
 
@@ -254,7 +257,7 @@
 }
 
 
-/* Project Model  */
+/* --------- Project Model ----------- */
 
 
 .backdrop2{
@@ -271,7 +274,7 @@
 .project-modal {
   text-align: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   max-width: 600px;
   height: 80%;
   position: fixed;
@@ -391,4 +394,122 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+
+
+
+/* ---------------  Responsive   ------------ */
+
+@media (max-width: 730px) {
+
+  .project-item {
+  max-width: 260px;
+}
+
+.project-item img {
+  max-height: 260px;
+}
+
+}
+
+@media (max-width: 600px) {
+
+  /* Hero */
+
+  .webdev-left h2 {
+    width: 200px;
+    color: orange;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-weight: 400;
+    font-size: 30px;
+    padding-left: 5px;
+  }
+
+  .webdev-right h3 {
+    width: 250px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 22px;
+  }
+
+
+
+  /* About */
+
+  .skills-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .skill-info-wrapper {
+    width: 45%;
+    margin: 15px 5px;
+    padding: 10px;
+
+  }
+
+  .skill-info-wrapper h2 {
+    font-size: 14px;
+  }
+
+  .skill-info-wrapper p {
+    font-size: 12px;
+  }
+
+
+
+
+/* About Content */
+
+.about-content-wrapper {
+  flex-direction: column;
+}
+
+.about-info-wrapper, .about-languages{
+  width: 90%;
+  padding: 30px 0 0 0; 
+}
+
+.about-img-holder img{
+  width: 50%;
+}
+
+
+
+/* Projects */
+
+.project-wrapper {
+  margin: 30px 5px;
+  
+}
+
+.project-item {
+  max-width: 180px;
+}
+
+.project-item img {
+  max-height: 180px;
+}
+
+.project-item h1 {
+  top: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+
+.project-item p {
+  display: none;
+}
+
+.project-item span {
+  font-size: 10px;
+  padding: 3px;
+}
+
 }
