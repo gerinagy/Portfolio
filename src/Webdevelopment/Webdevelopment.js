@@ -93,7 +93,7 @@ class Webdevelopment extends Component {
             <br /> Gergo Nagy.</h2>
           </div>
           <div className="webdev-right">
-            <h3>A Junior Full-stack web developer.</h3>
+            <h3>A Junior Front-End developer.</h3>
           </div>
         </section>
 
