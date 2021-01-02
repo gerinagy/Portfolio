@@ -47,6 +47,8 @@ class Webdevelopment extends Component {
       .then(response => {
         this.setState({ projectList: Object.values(response.data) })
       })
+    
+    console.log("get succesful")
   }
 
 

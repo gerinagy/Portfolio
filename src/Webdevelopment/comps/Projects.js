@@ -30,6 +30,8 @@ class Projects extends Component {
   }
 
   render() {
+
+    console.log("project showed")
     
     return (
       <motion.div className="project-item"

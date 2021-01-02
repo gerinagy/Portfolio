@@ -5,13 +5,13 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Import Components
-import Nav from '../components/Nav';
-import Home from '../Home/Home';
-import Kiteboarding from '../Kiteboarding/Kiteboarding';
-import Webdevelopment from '../Webdevelopment/Webdevelopment';
-import Portfolio from '../Portfolio/Portfolio';
-import Footer from '../components/Footer/Footer';
-import Contact from '../Contact/Contact';
+import Nav from './components/Nav';
+import Home from './Home/Home';
+import Kiteboarding from './Kiteboarding/Kiteboarding';
+import Webdevelopment from './Webdevelopment/Webdevelopment';
+import Portfolio from './Portfolio/Portfolio';
+import Footer from './components/Footer/Footer';
+import Contact from './Contact/Contact';
 
 
 
