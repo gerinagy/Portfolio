@@ -43,12 +43,13 @@ class Webdevelopment extends Component {
 
   componentDidMount() {
 
-    axios.get('/ProjectsData.json')
+    axios.get('./projectsData.json')
       .then(response => {
         this.setState({ projectList: Object.values(response.data) })
       })
-    
-    console.log("get succesful")
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
 

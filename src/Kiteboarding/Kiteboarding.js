@@ -29,7 +29,7 @@ function Kiteboarding() {
           <div className="kite-text">
             <h3>Teaching</h3>
             <p>Kitelessons with brand new kites.
-            <br />Feel free to contact about lessons and details. </p>
+            <br />Feel free to reach me about lessons or details. </p>
           </div>
           <div className="k-buttons">
             <Link to="/Contact">contact me</Link>
@@ -58,6 +58,12 @@ function Kiteboarding() {
             <Link to="/Contact">contact me</Link>
             <a href="https://www.eleveightkites.com/kites" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
+        </div>
+      </section>
+
+      <section className="card-block">
+        <div className="iframe-container">
+          <iframe title="youtubekite" width="560" height="315" src="https://www.youtube.com/embed/Szvs0TqOYCg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </section>
 
