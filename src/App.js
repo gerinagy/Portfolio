@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 // Import Tools
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 // Import Components
 import Nav from './components/Nav';
@@ -19,7 +19,7 @@ import Contact from './Contact/Contact';
 function App() {
 
   return (
-    <Router>
+    <BrowserRouter>
       <Nav />
       <Switch >
         <Route path="/" exact component={Home} />
@@ -29,7 +29,7 @@ function App() {
         <Route path="/Contact" exact component={Contact} />
       </Switch>
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Burger.css';
 import { Link } from 'react-router-dom';
-import Profpic from '../Assets/image/captain.JPG';
+import Profpic from '../Assets/image/captain.jpg';
 
 
 

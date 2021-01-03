@@ -1,7 +1,8 @@
 {
   "name": "react-tutorial",
   "version": "0.1.0",
-  "homepage": "http://minimalvibe.com",
+  "homepage": "https://minimalvibe.com",
+  "page": "https://minimalvibe.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",

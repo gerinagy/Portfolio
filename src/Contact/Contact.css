@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 500px;
   height: 93vh;
-  background-image: url(../Assets/image/hopok.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Assets/image/hopok.jpg);
   background-position: center;
   background-size: cover;
   overflow: hidden;

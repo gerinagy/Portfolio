@@ -219,7 +219,7 @@
   overflow: hidden;
 }
 
-.project-item h1 {
+.project-hover h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -228,12 +228,12 @@
   color: black;
 }
 
-.project-item p {
+.project-hover-p {
   font-size: 20px;
   color: turquoise;
 }
 
-.project-item span {
+.project-hover span {
   position: absolute;
   bottom: 30%;
   left: 50%;
@@ -412,15 +412,15 @@
     max-height: 260px;
   }
 
-  .project-item p {
+  .project-hover-p {
     display: none;
   }
 
-  .project-item h1 {
+  .project-hover h1 {
     font-size: 20px;
   }
 
-  .project-item span {
+  .project-hover span {
     font-size: 12px;
     font-weight: 400;
     border: 2px solid turquoise;
@@ -520,7 +520,7 @@
     font-size: 15px;
   }
 
-  .project-item p {
+  .project-hover-p {
     display: none;
   }
 

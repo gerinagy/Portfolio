@@ -22,7 +22,6 @@ class ProjectModal extends Component {
 
           <div className="project-modal-description">
             <h2>{this.props.Title}</h2>
-
             <h3>{this.props.Skill}</h3>
 
             <div style={{ height: "1px", width: "100%", backgroundColor: "#333", margin: "20px 0", opacity: ".3" }} />
