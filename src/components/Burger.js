@@ -36,7 +36,6 @@ const Burger = () => {
             <li onClick={onLinkHandle}><Link to="/Webdevelopment" className="menulinks">Web Development</Link></li>
             <li onClick={onLinkHandle}><Link to="/Portfolio" className="menulinks">Portfolio</Link></li>
             <li onClick={onLinkHandle}><Link to="/Contact" className="menulinks">Contact</Link></li>
-
           </ul>
           <div className="profile">
             <div className="profile-wrapper">

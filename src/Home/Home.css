@@ -13,14 +13,14 @@
 
 
 .heroimage{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Assets/image/capetown.jpg);
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Assets/image/capetown.jpg);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -80,7 +80,7 @@
   background-position: center left;
 }
 
-.block-wrapper li{
+.block-wrapper span{
   background: rgba(0, 0, 0, 0.61);
   border: solid 1px whitesmoke;
   padding: 10px;
@@ -90,10 +90,7 @@
   text-align: center;
   color: whitesmoke;
   letter-spacing: 1px;
-
-
-
-   transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 
@@ -103,19 +100,15 @@
 
 /* Blocks Hover Eff */
 
-.block-link:hover li {
-    color: whitesmoke;
-    font-size: 25px;
-  
+.block-link:hover span {
+  color: whitesmoke;
+  font-size: 25px;
 }
 
 
 .block-link:hover{
   background-size: 160%;
 }
-
-
-
 
 
 

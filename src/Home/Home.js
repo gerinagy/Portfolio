@@ -14,15 +14,15 @@ function Home() {
         <div className="block-wrapper">
           <div className="grid-wrapper-1">              
             <Link to="/Kiteboarding" className='block-link-1 block-link'>
-              <li>Kiteboarding</li>
+              <span>Kiteboarding</span>
             </Link>
             <Link to="/Webdevelopment" className='block-link-2 block-link'>
-              <li>Web Development</li>
+              <span>Web Development</span>
             </Link>
           </div>
           <div className="grid-wrapper-2">   
             <Link to="/Portfolio" className='block-link-3 block-link'>
-              <li>Portfolio</li>
+              <span>Portfolio</span>
             </Link>
           </div>
           </div>
