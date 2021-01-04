@@ -41,7 +41,7 @@ const Burger = () => {
           <div className="profile">
             <div className="profile-wrapper">
               <div className="profilePic">
-                <img src={Profpic} alt="" />
+                <img src={Profpic} alt="NavPic" width="auto" height="auto"/>
               </div>
 
               <div className="profileBio">

@@ -43,7 +43,7 @@ class Projects extends Component {
         {this.state.isHovered ?
           <div className="project-hover" >
             <h1>{this.props.title}
-              <p className="project-hover-p">{this.props.skill}</p>
+              <p>{this.props.skill}</p>
             </h1>
 
             <span onClick={this.handleClick}>More Details</span>

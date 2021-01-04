@@ -37,7 +37,7 @@ function Kiteboarding() {
         </div>
 
         <div className="kite-image">
-          <img src={KitePhoto} alt="" />
+          <img src={KitePhoto} alt="Teaching" width="auto" height="auto"/>
         </div>
       </section>
 
@@ -46,7 +46,7 @@ function Kiteboarding() {
 
       <section className="card-block">
         <div className="kite-image">
-          <img src={Eleveight} alt="" />
+          <img src={Eleveight} alt="Gear" width="auto" height="auto"/>
           <h3>2021 FS</h3>
         </div>
         <div className="kite-content">

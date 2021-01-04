@@ -228,7 +228,7 @@
   color: black;
 }
 
-.project-hover-p {
+.project-hover p {
   font-size: 20px;
   color: turquoise;
 }
@@ -315,10 +315,10 @@
   overflow: hidden;
 }
 
-.project-modal-description h3, .project-modal-description p{
-  opacity: 60%;
+.project-modal-description h3, .project-modal-description p {
   font-weight: 500;
   margin: 5px 0;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .button-web {
@@ -412,7 +412,7 @@
     max-height: 260px;
   }
 
-  .project-hover-p {
+  .project-hover p {
     display: none;
   }
 
@@ -520,7 +520,7 @@
     font-size: 15px;
   }
 
-  .project-hover-p {
+  .project-hover p {
     display: none;
   }
 
