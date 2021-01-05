@@ -356,17 +356,18 @@
 .close {
     position: absolute;
     right: 20px;
-    top: 68%;
+    top: 30px;
     width: 32px;
     height: 32px;
     opacity: 0.4;
     z-index: 99;
     cursor: pointer;
-  
   }
+
   .close:hover {
     opacity: 1;
   }
+
   .close:before, .close:after {
     position: absolute;
     left: 15px;

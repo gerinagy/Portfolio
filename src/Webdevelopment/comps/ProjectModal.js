@@ -14,7 +14,7 @@ class ProjectModal extends Component {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}>
         <div className="project-modal">
-          <span className="close" onClick={this.props.modalClosed} />
+          
 
           <div className="project-modal-image">
             <img src={this.props.Image} alt="" />
@@ -22,7 +22,9 @@ class ProjectModal extends Component {
 
           <div className="project-modal-description">
             <h2>{this.props.Title}</h2>
-            <h3>{this.props.Skill}</h3>
+            <h3>{this.props.Skill} 
+            <span className="close" onClick={this.props.modalClosed} />
+            </h3>
 
             <div style={{ height: "1px", width: "100%", backgroundColor: "#333", margin: "20px 0", opacity: ".3" }} />
 
