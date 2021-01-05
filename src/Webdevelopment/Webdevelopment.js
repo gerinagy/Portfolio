@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Speed from '../Assets/icons/speed.png';
 import Responsive from '../Assets/icons/responsive.png';
 import Dynamic from '../Assets/icons/dynamic.png';
-import AboutProf from '../Assets/image/sunsetprof.jpg';
+import AboutProf from '../Assets/image/sunsetprof.jp2';
 
 // Components
 import { LangList } from './comps/LangList';

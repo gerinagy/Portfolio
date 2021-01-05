@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
 
-import InstaImg from '../Assets/image/instaprof.jpg'
+import InstaImg from '../Assets/image/instaprof.jp2'
 
 function Contact() {
 

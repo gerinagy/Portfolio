@@ -4,7 +4,7 @@ import './Kiteboarding.css';
 
 // Images
 import Eleveight from '../Assets/image/FS-LGrey.png'
-import KitePhoto from '../Assets/image/instructor.jpg'
+import KitePhoto from '../Assets/image/instructor.jp2'
 
 
 function Kiteboarding() {

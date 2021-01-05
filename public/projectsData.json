@@ -4,7 +4,7 @@
     "filter": "wordpress",
     "title": "KiteboardingWays Kiteschool",
     "skill": "WordPress",
-    "image": "/ProjectsImg/Kiteboardingways.jpg",
+    "image": "/ProjectsImg/Kiteboardingways.jp2",
     "url": "https://kiteboardingways.surf/",
     "description": "KiteboardingWays offers everthing related to kiteboarding. Details about Kitelessons, Kite Safaris, Trainings and Kite gear rental. The website made with WordPress so it's easy to manage for the client.",
     "github": ""
@@ -16,7 +16,7 @@
     "filter": "wordpress",
     "title": "Kite Visions",
     "skill": "WordPress",
-    "image": "/ProjectsImg/kitevisions.jpg",
+    "image": "/ProjectsImg/kitevisions.jp2",
     "url": "https://kitevisions.com/",
     "description": "KiteVisions website introduces all of its services. Their main service is content creation for companies for the purpose of commercial photos or videos."
 
@@ -27,7 +27,7 @@
     "filter": "react",
     "title": "Gergo Nagy Portfolio",
     "skill": "React / Firebase",
-    "image": "/ProjectsImg/Portfolio.jpg",
+    "image": "/ProjectsImg/Portfolio.jp2",
     "url": "https://kitevisions.com/",
     "description": "My Personal Portfolio website. This website describes briefly what I'm doing and what services I offer. I used JavaScript, React and Firebase to create this website.",
     "github": "GitHub",
