@@ -1,0 +1,33 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.sgvan.com/$1 [R,L]
+
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+
+
+
+<Files ~ "^[^\.]+$">
+    ForceType application/x-httpd-php
+    SetOutputFilter DEFLATE
+  </Files>
+
+  <FilesMatch "\.(js|css|html|htm|php|xml)$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+
+  ExpiresActive on
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+  AddType image/vnd.microsoft.icon .ico
+  ExpiresByType image/vnd.microsoft.icon "access plus 3 months"
