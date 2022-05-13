@@ -143,8 +143,8 @@ class Webdevelopment extends Component {
               </div>
               <div className="about-bio">
                 <h2>Who am I?</h2>
-                <p>I'm a Junior Full-Stack Developer from Hungary.
-                <br />I have a high passion to create interactive dynamic websites.  As well as with great functions and solid Back-End.
+                <p>I'm a Junior Front-end Developer from Hungary.
+                <br />I have high passion to create interactive dynamic websites. Combined with great solutions and solid Back-End.
                 <br />
                   <br /><Link to="/Contact" className="about-bio-link" > Let's create something special. </Link> </p>
               </div>
