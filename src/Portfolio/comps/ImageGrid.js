@@ -26,7 +26,7 @@ const ImageGrid = ({ setSelectedImg }) => {
           </motion.div>
         )) }
       </div>
-      <h1 style={{ textAlign: "center", padding: "40px" }} >You are welcome here anytime.</h1>
+      <h1 style={{ textAlign: "center", padding: "40px" }} >You are welcomed here anytime.</h1>
     </div>
   )
 }

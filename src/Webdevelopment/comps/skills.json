@@ -3,22 +3,22 @@
   {
     "id": 1,
     "skill": "CSS",
-    "percentage": "80"
+    "percentage": "90"
   },
   {
     "id": 2,
     "skill": "HTML",
-    "percentage": "80"
+    "percentage": "90"
   },
   {
     "id": 3,
     "skill": "React",
-    "percentage": "50"
+    "percentage": "80"
   },
   {
     "id": 4,
     "skill": "JavaScript",
-    "percentage": "50"
+    "percentage": "80"
   },
   {
     "id": 5,
@@ -33,7 +33,7 @@
   {
     "id": 7,
     "skill": "WordPress",
-    "percentage": "30"
+    "percentage": "40"
   },
   {
     "id": 8,

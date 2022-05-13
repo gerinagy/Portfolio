@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Kiteboarding.css';
 
 // Images
-import Eleveight from '../Assets/image/FS-LGrey.png'
+import ReedinKites from '../Assets/image/Reedinkite.webp'
 import KitePhoto from '../Assets/image/instructor.jp2'
 
 
@@ -14,7 +14,7 @@ function Kiteboarding() {
       <section className="k-hero-wrapper">
         <div className="k-hero-image">
           <div className="k-hero-content">
-            <h2>Eleveight Kites</h2>
+            <h2>Reedin Kites</h2>
             <h1>Kiteboarding</h1>
             <h3>Sport. Train. Fun.</h3>
           </div>
@@ -46,17 +46,17 @@ function Kiteboarding() {
 
       <section className="card-block">
         <div className="kite-image">
-          <img src={Eleveight} alt="Gear" width="auto" height="auto"/>
-          <h3>2021 FS</h3>
+          <img src={ReedinKites} alt="Gear" width="auto" height="auto"/>
+          <h3>SuperModel 3</h3>
         </div>
         <div className="kite-content">
-          <h3>Eleveight Kites</h3>
+          <h3>Reedin Kites</h3>
           <p>Kites. Boards. Equipments.
             <br />Check the website and contact me for prices.
           </p>
           <div className="k-buttons">
             <Link to="/Contact">contact me</Link>
-            <a href="https://www.eleveightkites.com/kites" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.reedinkites.com/pages/showcase-supermodel" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
         </div>
       </section>
