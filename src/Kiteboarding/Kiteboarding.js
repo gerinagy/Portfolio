@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Kiteboarding.css';
 
 // Images
-import Eleveight from '../Assets/image/Reedinkite.webp'
+import ReedinKites from '../Assets/image/Reedinkite.webp'
 import KitePhoto from '../Assets/image/instructor.jp2'
 
 
@@ -46,7 +46,7 @@ function Kiteboarding() {
 
       <section className="card-block">
         <div className="kite-image">
-          <img src={Eleveight} alt="Gear" width="auto" height="auto"/>
+          <img src={ReedinKites} alt="Gear" width="auto" height="auto"/>
           <h3>SuperModel 3</h3>
         </div>
         <div className="kite-content">
